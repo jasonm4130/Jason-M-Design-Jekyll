@@ -194,7 +194,16 @@
           right: 8px
 
 .navbar-solid
-  background-color: #000000
+  background-color: transparentize($metroblack, .4)
+
+  .navbar-nav
+    li
+      a
+        &.active,
+        &:hover,
+        &:focus
+          background-color: transparentize(#fff, .6)
+          color: $metroblack
 
   .navbar-brand
     padding: 10px 15px 8px

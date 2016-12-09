@@ -61,7 +61,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  * Compile files from _sass into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
-    return gulp.src('assets/css/main.sass')
+    return gulp.src('assets/css/*.sass')
         .pipe(sass({
             includePaths: ['css'],
             onError: browserSync.notify,
@@ -98,7 +98,12 @@ gulp.task('sass', function () {
                     ".modal.in.modal-dialog",
                     ".modal-open",
                     ".in",
-                    ".modal-backdrop"]
+                    ".modal-backdrop",
+                    ".embed-responsive",
+                    ".embed-responsive-16by9",
+                    ".embed-responsive-item",
+                    ".fa-play",
+                    "fa-pause"]
          }))
          .pipe(gulp.dest('assets/css/1-tools/uncss'));
  });
@@ -135,7 +140,7 @@ gulp.task('watch', function () {
     gulp.watch(['_pugfiles/**/*.pug'], ['pug']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*', '_posts/**/*.*'], ['jekyll-rebuild', 'uncss']);
     gulp.watch('assets/js/**/*.js', ['jekyll-rebuild']);
-    gulp.watch('assets/img/**/*.+(png|jpg|gif|svg)', ['image-min']);
+    gulp.watch('assets/images/**/*.+(png|jpg|gif|svg)', ['image-min']);
 });
 
 /**

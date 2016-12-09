@@ -1,0 +1,20 @@
+// Subscribe
+section#subscribe.section.subscribe
+  .container
+    .row
+      .col-md-4.col-sm-6
+        .subscribe-text
+          h2 Subscribe
+          span to our weekly newsletter
+      .col-md-8.col-sm-6
+        form#subscription-form.subscribe-form
+          .input-group
+            label.sr-only(for='subscriber-email') Email address
+            input#subscriber-email.form-control(name='email', type='email', placeholder='Enter your email address', required='')
+            span.input-group-addon
+              input#subscribe-button.btn.btn-default(type='submit', value='Join')
+          // /input-grpup
+        // SUCCESS OR ERROR MESSAGES
+        #subscription-response
+        p.spam-text * We will never spam you
+// Subscribe
