@@ -14,30 +14,40 @@ section#expertise.section.dark-bg.expertise.progressbars
               li.active(role='presentation')
                 a(href='#html', aria-controls='html', role='tab', data-toggle='tab') HTML5
               li(role='presentation')
-                a(href='#android', aria-controls='android', role='tab', data-toggle='tab') Android
+                a(href='#sass', aria-controls='android', role='tab', data-toggle='tab') SASS
               li(role='presentation')
-                a(href='#ios', aria-controls='ios', role='tab', data-toggle='tab') iOS
+                a(href='#nodejs', aria-controls='ios', role='tab', data-toggle='tab') NodeJS
+              li(role='presentation')
+                a(href='#wordpress', aria-controls='ios', role='tab', data-toggle='tab') WordPress
             // Tab panes
             .tab-content
               #html.tab-pane.active(role='tabpanel')
                 .tab-left
-                  i.fa.fa-html5.fa-5x
+                  span.ion-social-html5-outline.fa-5x
                 .tab-right
                   p
                     | Donec ac consectetur neque, vel eleifend nisi. In et nibh at neque
                     | convallis tincidunt modales odio vel malesuada interdum donec ac
                     | consectetur neque.
-              #android.tab-pane(role='tabpanel')
+              #sass.tab-pane(role='tabpanel')
                 .tab-left
-                  i.fa.fa-android.fa-5x
+                  span.ion-social-sass.fa-5x
                 .tab-right
                   p
                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     | tincidunt modales odio vel malesuada interdum donec ac consectetur
                     | neque.
-              #ios.tab-pane(role='tabpanel')
+              #nodejs.tab-pane(role='tabpanel')
                 .tab-left
-                  i.fa.fa-apple.fa-5x
+                  span.ion-social-nodejs.fa-5x
+                .tab-right
+                  p
+                    | neque convallis tincidunt modales odio vel malesuada interdum donec ac
+                    | consectetur neque, vel eleifend nisi. In et nibh at donec ac consectetur
+                    | neque.
+              #wordpress.tab-pane(role='tabpanel')
+                .tab-left
+                  span.ion-social-wordpress-outline.fa-5x
                 .tab-right
                   p
                     | neque convallis tincidunt modales odio vel malesuada interdum donec ac
@@ -50,27 +60,43 @@ section#expertise.section.dark-bg.expertise.progressbars
           .progress-box
             header.progress-heading
               .row
-                .col-xs-6 HTML5
+                .col-xs-6
+                  span.ion-social-html5-outline
+                  | &nbsp HTML5
                 .col-xs-6.text-right 90%
             .progress
               .progress-bar(role='progressbar', aria-valuenow='90', aria-valuemin='0', aria-valuemax='100')
-                span.sr-only 60% Complete
+                span.sr-only 90% Complete
           .progress-box
             header.progress-heading
               .row
-                .col-xs-6 Android
+                .col-xs-6
+                  span.ion-social-sass
+                  | &nbsp SASS
+                .col-xs-6.text-right 85%
+            .progress
+              .progress-bar(role='progressbar', aria-valuenow='85', aria-valuemin='0', aria-valuemax='100')
+                span.sr-only 85% Complete
+          .progress-box
+            header.progress-heading
+              .row
+                .col-xs-6
+                  span.ion-social-nodejs
+                  | &nbsp NodeJS
                 .col-xs-6.text-right 70%
             .progress
               .progress-bar(role='progressbar', aria-valuenow='70', aria-valuemin='0', aria-valuemax='100')
-                span.sr-only 60% Complete
+                span.sr-only 70% Complete
           .progress-box
             header.progress-heading
               .row
-                .col-xs-6 iOS
-                .col-xs-6.text-right 50%
+                .col-xs-6
+                  span.ion-social-wordpress-outline
+                  | &nbsp WordPress
+                .col-xs-6.text-right 80%
             .progress
-              .progress-bar(role='progressbar', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100')
-                span.sr-only 60% Complete
+              .progress-bar(role='progressbar', aria-valuenow='80', aria-valuemin='0', aria-valuemax='100')
+                span.sr-only 80% Complete
         // col-md-6
       // row
     // .section-content

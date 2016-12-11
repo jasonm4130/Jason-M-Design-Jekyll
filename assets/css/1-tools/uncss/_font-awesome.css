@@ -101,20 +101,11 @@
 .fa-rocket:before {
   content: "\f135";
 }
-.fa-html5:before {
-  content: "\f13b";
-}
 .fa-youtube:before {
   content: "\f167";
 }
 .fa-instagram:before {
   content: "\f16d";
-}
-.fa-apple:before {
-  content: "\f179";
-}
-.fa-android:before {
-  content: "\f17b";
 }
 .fa-graduation-cap:before {
   content: "\f19d";
