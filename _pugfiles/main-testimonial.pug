@@ -15,24 +15,14 @@ section#testimonial.section.overlay-1.testimonial.bg-image.dark-bg
             .quote.left “
             .quote.right ”
             #testimonials-carousel.owl-carousel
+              | {% for testimonial in site.testimonials %}
               .item
-                .review(data-client-image='assets/images/team/team-1.jpg')
+                .review(data-client-image='{{testimonial.thumbnail}}')
                   blockquote
-                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                  h4.reviewer Bhond James
-                  p.designation Founder
-              .item
-                .review(data-client-image='assets/images/team/team-2.jpg')
-                  blockquote
-                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                  h4.reviewer Bhond James
-                  p.designation Founder
-              .item
-                .review(data-client-image='assets/images/team/team-3.jpg')
-                  blockquote
-                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                  h4.reviewer Bhond James
-                  p.designation Founder
+                    | {{testimonial.content}}
+                  h4.reviewer {{testimonial.title}}
+                  p.designation {{testimonial.designation}}
+              | {% endfor %}
             // Controls
             .owl-controls
               a.prev(href='', role='button')

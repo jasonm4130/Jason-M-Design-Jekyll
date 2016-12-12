@@ -1,0 +1,32 @@
+// Fixed Top Navigation
+nav#fixedTopNav.navbar.navbar-fixed-top.main-navigation(itemscope='', itemtype='https://schema.org/SiteNavigationElement', role='navigation')
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#main-nav-collapse')
+        span.sr-only Toggle navigation
+        span.ion-drag
+      // Logo
+      .navbar-brand(itemscope='', itemtype='https://schema.org/Organization')
+        span.sr-only(itemprop='name') Jason M Design
+        a(itemprop='url', href='/')
+          img(src="/assets/images/brand.png" alt="Jason M Design logo")
+      // /Logo
+    // /.navbar-header
+    // Navigation Links
+    #main-nav-collapse.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right(role='menu')
+        li
+          a(href='/')  Home
+        li
+          a.active(href='/about-us') About Us
+        li
+          a(href='/our-services') Our Services
+        li
+          a(href='/portfolio') Portfolio
+        li
+          a(href='#') Blog
+        li
+          a(href='#') Contact
+    // /Navigation Links
+  // /.container
+// /Fixed Top Navigation

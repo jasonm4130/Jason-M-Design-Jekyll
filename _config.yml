@@ -7,3 +7,5 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:title/
+  testimonials:
+    output: false

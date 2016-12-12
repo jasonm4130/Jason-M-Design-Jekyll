@@ -1,0 +1,39 @@
+// Portfolio
+section#portfolio.section.portfolio
+  .container
+    //
+    header.section-heading
+      h2 Recent Projects
+      span Successful projects,happy clients and great results
+    //
+    .section-content
+      .main_content
+        #filters.isotop-filter
+          button.btn.btn-isotop.is-checked(type='button', data-filter='*') All
+          button.btn.btn-isotop(type='button', data-filter='.web-design') Web-Design
+          button.btn.btn-isotop(type='button', data-filter='.wordpress') WordPress
+          button.btn.btn-isotop(type='button', data-filter='.photoshop') Photoshop
+          button.btn.btn-isotop(type='button', data-filter='.ui') UI
+      // main_content
+  //
+  //
+  //
+  //
+  .portfolio-grid
+    //
+    //
+    //
+    ul#da-thumbs.da-thumbs.isotope
+      | {% for work in site.portfolio reversed %}
+      <li class="{{ work.categories | join: ' ' }}" data-category='{{ work.categories | join: ' ' }}'>
+        a(href='{{work.url}}')
+          img(src='/{{work.thumbnail}}')
+          .portfolio-detail-overlay
+            .middle-align-wrap
+              .middle-align-cell
+                h4 {{work.title}}
+                span {{ work.categories | join: ' / '}}
+      </li>
+      | {% endfor %}
+  // /portfolio-grid
+// /Portfolio

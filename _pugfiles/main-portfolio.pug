@@ -10,7 +10,7 @@ section#portfolio.section.portfolio
       .main_content
         #filters.isotop-filter
           button.btn.btn-isotop.is-checked(type='button', data-filter='*') All
-          button.btn.btn-isotop(type='button', data-filter='.web-design') Web
+          button.btn.btn-isotop(type='button', data-filter='.web-design') Web-Design
           button.btn.btn-isotop(type='button', data-filter='.wordpress') WordPress
           button.btn.btn-isotop(type='button', data-filter='.photoshop') Photoshop
           button.btn.btn-isotop(type='button', data-filter='.ui') UI
@@ -24,7 +24,7 @@ section#portfolio.section.portfolio
     //
     //
     ul#da-thumbs.da-thumbs.isotope
-      | {% for work in site.portfolio reversed %}
+      | {% for work in site.portfolio reversed limit:8 %}
       <li class="{{ work.categories | join: ' ' }}" data-category='{{ work.categories | join: ' ' }}'>
         a(href='{{work.url}}')
           img(src='/{{work.thumbnail}}')
@@ -35,93 +35,5 @@ section#portfolio.section.portfolio
                 span {{ work.categories | join: ' / '}}
       </li>
       | {% endfor %}
-      //- li.marketing(data-category='marketing')
-      //-   a(href='portfolio__single.html')
-      //-     img(src='assets/images/work/02.jpg', alt='')
-      //-     .portfolio-detail-overlay
-      //-       .middle-align-wrap
-      //-         .middle-align-cell
-      //-           h4 Corporate Website
-      //-           span Webdesign
-      //- li.wordpress(data-category='wordpress')
-      //-   a(href='portfolio__single.html')
-      //-     img(src='assets/images/work/03.jpg', alt='')
-      //-     .portfolio-detail-overlay
-      //-       .middle-align-wrap
-      //-         .middle-align-cell
-      //-           h4 Corporate Website
-      //-           span Webdesign
-      //- li.design(data-category='design')
-      //-   a(href='portfolio__single.html')
-      //-     img(src='assets/images/work/04.jpg', alt='')
-      //-     .portfolio-detail-overlay
-      //-       .middle-align-wrap
-      //-         .middle-align-cell
-      //-           h4 Corporate Website
-      //-           span Webdesign
-      //- li.marketing(data-category='marketing')
-      //-   a(href='portfolio__single.html')
-      //-     img(src='assets/images/work/05.jpg', alt='')
-      //-     .portfolio-detail-overlay
-      //-       .middle-align-wrap
-      //-         .middle-align-cell
-      //-           h4 Corporate Website
-      //-           span Webdesign
-      //- li.wordpress(data-category='wordpress')
-      //-   a(href='portfolio__single.html')
-      //-     img(src='assets/images/work/06.jpg', alt='')
-      //-     .portfolio-detail-overlay
-      //-       .middle-align-wrap
-      //-         .middle-align-cell
-      //-           h4 Corporate Website
-      //-           span Webdesign
-      //- li.design(data-category='design')
-      //-   a(href='portfolio__single.html')
-      //-     img(src='assets/images/work/07.jpg', alt='')
-      //-     .portfolio-detail-overlay
-      //-       .middle-align-wrap
-      //-         .middle-align-cell
-      //-           h4 Corporate Website
-      //-           span Webdesign
-      //- li.marketing(data-category='marketing')
-      //-   a(href='portfolio__single.html')
-      //-     img(src='assets/images/work/08.jpg', alt='')
-      //-     .portfolio-detail-overlay
-      //-       .middle-align-wrap
-      //-         .middle-align-cell
-      //-           h4 Corporate Website
-      //-           span Webdesign
-      //- li.brandidentity(data-category='brandidentity')
-      //-   a(href='portfolio__single.html')
-      //-     img(src='assets/images/work/09.jpg', alt='')
-      //-     .portfolio-detail-overlay
-      //-       .middle-align-wrap
-      //-         .middle-align-cell
-      //-           h4 Corporate Website
-      //-           span Webdesign
-      //- li.marketing(data-category='marketing')
-      //-   a(href='portfolio__single.html')
-      //-     img(src='assets/images/work/10.jpg', alt='')
-      //-     .portfolio-detail-overlay
-      //-       .middle-align-wrap
-      //-         .middle-align-cell
-      //-           h4 Corporate Website
-      //-           span Webdesign
-      //- li.brandidentity(data-category='brandidentity')
-      //-   a(href='portfolio__single.html')
-      //-     img(src='assets/images/work/11.jpg', alt='')
-      //-     .portfolio-detail-overlay
-      //-       .middle-align-wrap
-      //-         .middle-align-cell
-      //-           h4 Corporate Website
-      //-           span Webdesign
-      //- li.brandidentity(data-category='brandidentity')
-      //-   a(href='portfolio__single.html')
-      //-     img(src='assets/images/work/12.jpg', alt='')
-      //-     .portfolio-detail-overlay
-      //-       .middle-align-wrap
-      //-         .middle-align-cell
-      //-           h4 Corporate Website
-      //-           span Webdesign
   // /portfolio-grid
 // /Portfolio
