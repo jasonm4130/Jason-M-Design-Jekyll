@@ -1,0 +1,43 @@
+// Contact-us
+section#contact.section.contact.contact-full-width
+  .container
+    //
+    .section-content
+      .row
+        .col-md-6.col-sm-8.col-md-offset-3.col-sm-offset-2
+          h5 Feel free to drop us a line!
+          form#contactForm.contact-form(action='php/contact-form.php', method='post', name='contactform', role='form')
+            .form-group
+              input#name.form-control(name='name', placeholder='Your Name', type='text', required='')
+            .form-group
+              input#email.form-control(name='email', placeholder='Email Address', type='email', required='')
+            .form-group
+              textarea#message.form-control(name='massage', placeholder='Type your message here', rows='5', required='')
+            #contactFormResponse
+            button#cfsubmit.btn.btn-dark.btn-block.contact-submit(type='submit') Give us a shout
+      .row
+        .col-md-6.col-sm-8.col-md-offset-3.col-sm-offset-2
+          .row.contact-info-wrap
+            .col-sm-6
+              div
+                h5 Office Location
+                address.contact-info
+                  span Brisbane City
+                  br
+                  span Queensland
+                  | ,
+                  span 4000
+                  br
+                  span Australia
+            .col-sm-6
+              div
+                h5 Contact Information
+                .contact-info
+                  | Twitter: <a href="//twitter.com/JasonMDesign">JasonMDesign</a>
+                  br
+                  | Facebook: <a href="//www.facebook.com/jasonmdesign">JasonMDesign</a>
+                  br
+                  | Email: <a href="mailto:jason@jasonmdesign.com">jason@jasonmdesign.com</a>
+  .google-map
+    #map
+// Contact-us
