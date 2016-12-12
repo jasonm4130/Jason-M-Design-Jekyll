@@ -4,34 +4,32 @@ section#single-portfolio.section.single-portfolio
     .row
       .col-md-10.col-md-offset-1
         p.led
-          | {{post:excerpt}}
+          | {{page.lead}}
   .container
     .row
       .col-md-10.col-md-offset-1
         .flexslider
           ul.slides
+            | {% for image in page.images %}
             li
-              img(src='assets/images/work/single_01.jpg')
-            li
-              img(src='assets/images/work/single_02.jpg')
-            li
-              img(src='assets/images/work/single_03.jpg')
+              img(src='/{{image}}')
+            | {% endfor %}
     .row.portfolio-details-single
       .col-sm-4.col-md-3.col-md-offset-1
         h3 Project Details
         ul
           li
             strong Client:
-            |  Some Company
+            |  {{page.company}}
           li
             strong Date:
-            |  23 November, 2050
+            |  {{ page.date | date: '%d %B, %Y' }}
           li
             strong Online:
-            a(href='#') www.somewebsite.com
+            a(href='//{{post.website}}') &nbsp {{page.website}}
       .col-sm-8.col-md-7
         h3 Project Story
         p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deserunt est expedita ipsum placeat? Asperiores dolores dolorum, eius fugiat hic mollitia neque nesciunt nobis, odio odit officiis, omnis rem voluptas.  Asperiores dolores dolorum, eius fugiat hic mollitia neque nesciunt nobis, odio odit officiis, omnis rem voluptas.  Asperiores dolores dolorum, eius fugiat hic mollitia neque nesciunt nobis.
+          | {{page.content}}
   // /container
 // Single Portfolio

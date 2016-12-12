@@ -10,10 +10,10 @@ section#portfolio.section.portfolio
       .main_content
         #filters.isotop-filter
           button.btn.btn-isotop.is-checked(type='button', data-filter='*') All
-          button.btn.btn-isotop(type='button', data-filter='.design') Web
+          button.btn.btn-isotop(type='button', data-filter='.web-design') Web
           button.btn.btn-isotop(type='button', data-filter='.wordpress') WordPress
-          button.btn.btn-isotop(type='button', data-filter='.marketing') Marketing
-          button.btn.btn-isotop(type='button', data-filter='.brandidentity') Brand Identity
+          button.btn.btn-isotop(type='button', data-filter='.photoshop') Photoshop
+          button.btn.btn-isotop(type='button', data-filter='.ui') UI
       // main_content
   //
   //
@@ -24,15 +24,16 @@ section#portfolio.section.portfolio
     //
     //
     ul#da-thumbs.da-thumbs.isotope
-      | {% for work in site.portfolio %}
-      li.design(data-category='design')
-        a(href='portfolio__single.html')
-          img(src='assets/images/work/01.jpg', alt='')
+      | {% for work in site.portfolio reversed %}
+      <li class="{{ work.categories | join: ' ' }}" data-category='{{ work.categories | join: ' ' }}'>
+        a(href='{{work.url}}')
+          img(src='/{{work.thumbnail}}')
           .portfolio-detail-overlay
             .middle-align-wrap
               .middle-align-cell
                 h4 {{work.title}}
-                span Webdesign
+                span {{ work.categories | join: ' / '}}
+      </li>
       | {% endfor %}
       //- li.marketing(data-category='marketing')
       //-   a(href='portfolio__single.html')

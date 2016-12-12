@@ -1,13 +1,14 @@
 ---
 layout: portfolio-single
-title:  "Rimac Storage"
-date:   2015-08-01
+title:  "Masonboro Partners"
+date:   2016-11-20
 categories:
 - web-design
-thumbnail: assets/images/portfolio/rimac-storage-systems.jpg
+- wordpress
+thumbnail: assets/images/portfolio/masonboro-partners.jpg
 lead: An update to an existing website, adding responsive code and a new look
-company: "Rimac Storage Systems"
-website: "rimacstoragesystems.com.au"
+company: "Masonboro Partners"
+website: "masonboropartners.com"
 images:
 - assets/images/portfolio/rimac-storage-systems.jpg
 - assets/images/portfolio/masonboro-partners.jpg
