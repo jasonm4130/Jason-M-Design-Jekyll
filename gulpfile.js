@@ -138,7 +138,7 @@ gulp.task('image-min', function(){
 gulp.task('watch', function () {
     gulp.watch('assets/css/**/*.sass', ['sass']);
     gulp.watch(['_pugfiles/**/*.pug'], ['pug']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*', '_posts/**/*.md', '_portfolio/**/*.md', '_testimonials/**/*.md', 'portfolio/*.html', 'about-us/*.html', 'our-services/*.html', 'blog/*.html'], ['jekyll-rebuild', 'uncss']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*', '_posts/*.md', '_portfolio/**/*.md', '_testimonials/**/*.md', 'portfolio/*.html', 'about-us/*.html', 'our-services/*.html', 'blog/*.html'], ['jekyll-rebuild', 'uncss']);
     gulp.watch('assets/js/**/*.js', ['jekyll-rebuild']);
     gulp.watch('assets/images/**/*.+(png|jpg|gif|svg)', ['image-min']);
 });

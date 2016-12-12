@@ -1,0 +1,24 @@
+section#blog-single.section.blog.blog-standard
+  .container
+    .row
+      .col-md-8.col-md-offset-2
+        // Blog Post
+        .row.blog-post
+          .col-md-12
+            .featured-image
+              img.img-responsive(src='{{post.thumbnail}}')
+            h2.post-title {{page.title}}
+              .post-meta
+                | by
+                a(href='//medium.com/@Jason_Matthew') Jason
+                span |
+                | {{page.date | date: '%d %B, %Y'}}
+                span |
+                | {{page.categories | join: ' / '}}
+            .post-content
+              | {{page.content}}
+            #disqus_thread
+            noscript
+              | Please enable JavaScript to view the
+              a(href='https://disqus.com/?ref_noscript', rel='nofollow') comments powered by Disqus.
+        // Blog Post end

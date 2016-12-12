@@ -1468,7 +1468,7 @@ $(".rotate").textrotator({
 
 	/* discus */
 	/* * * CONFIGURATION VARIABLES * * */
-	var disqus_shortname = 'reigntemplate';
+	var disqus_shortname = 'jasonmdesign';
 
 	/* * * DON'T EDIT BELOW THIS LINE * * */
 	(function() {

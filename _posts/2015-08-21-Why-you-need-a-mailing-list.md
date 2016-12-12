@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-single
 title:  "Why you need a mailing list and how to build one."
 date:   2015-08-21 09:11:03
 author: Jason
@@ -12,7 +12,8 @@ categories:
 
 ![email marketing diagram](/assets/img/posts-img/email-marketing-diagram.jpg)
 
-##Why?
+Why?
+-
 Think about the hundreds of people who visit your website every day week or month. Now imagine that you had a simple way of keeping in contact with each and every one of these people. That’s what an email list can do for you and your business.
 
 You could be thinking to yourself now “how would keep in touch with these people help me or my business?” This is an easy question to answer once you understand that these people who visit your site that are like leaves in the wind. They go wherever they are taken, some might return to your website while many others will not. The power of an email list is that it has the potential to bring many more of these visitors that wouldn’t usually return back to your website.
@@ -21,7 +22,8 @@ How is this ability to bring people back to your website useful to you? Imagine 
 
 Maybe you aren’t using your list to sell though. How would it be useful then? Well imaging you have just written an awesome blog post that you spent hours putting together and think that it could really help a lot of people. Your email list could help promote it to more people, people that might not have seen it except for your emails.
 
-##How?
+How?
+-
 If you are still reading by this point you probably understand why you should have an email list. So how do you build one?
 
 1. Sign up with an email list provider someone like aweber or mailchimp. Get your account set up and you are on your way.

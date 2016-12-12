@@ -13,9 +13,9 @@ section#blog-standard.section.blog-standard
             | by
             a(href='//medium.com/@Jason_Matthew') Jason
             span |
-            a(href='#') {{post.date}}
+            | {{post.date | date: '%d %B, %Y'}}
             span |
-            a {{post.categories}}
+            | {{post.categories | join: ' / '}}
           .post-content
             p
               | {{ post.excerpt }}
