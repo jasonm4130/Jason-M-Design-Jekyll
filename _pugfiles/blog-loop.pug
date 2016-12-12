@@ -1,0 +1,48 @@
+section#blog-standard.section.blog-standard
+  .container
+    .col-md-8.col-md-offset-2
+      | {% for post in paginator.posts %}
+      // Blog Post
+      .row.blog-post
+        .col-md-12
+          .featured-image
+            img.img-responsive(src='{{post.thumbnail}}')
+          h2.post-title
+            a(href='{{post.url}}') {{post.title}}
+          .post-meta
+            | by
+            a(href='//medium.com/@Jason_Matthew') Jason
+            span |
+            a(href='#') {{post.date}}
+            span |
+            a {{post.categories}}
+          .post-content
+            p
+              | {{ post.excerpt }}
+          .read-more
+            a(href='{{post.url}}')
+              i.fa.fa-angle-double-right
+              |  Read More
+      // Blog Post end
+      | {% endfor %}
+      nav
+        ul.pagination.pagination-lg
+          | {% if paginator.previous_page %}
+          li
+            a(href='{{ paginator.previous_page_path }}', aria-label='Previous')
+              span(aria-hidden='true') «
+          | {% else %}
+          li
+            a(href='/blog', aria-label='Previous')
+              span(aria-hidden='true') «
+          | {% endif %}
+          | {% for i in (1..paginator.total_pages) %}
+          <li {% if i == paginator.page %} class="active" {% endif %}>
+            <a href='/blog/{% if i != 1 %}page{{i}}{% endif %}'> {{ i }} </a>
+          </li>
+          | {% endfor %}
+          | {% if paginator.next_page %}
+          li
+            a(href='{{ paginator.next_page_path }}', aria-label='Next')
+              span(aria-hidden='true') »
+          | {% endif %}
