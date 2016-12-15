@@ -4,9 +4,9 @@ section#footer-widgets.section.footer-widgets.dark-bg
     .row
       .col-md-3.col-sm-6
         .content-wrap.widget-text
-          h4 About Jason M Design
+          h4 About JMD
           p
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum eius libero nihil. Fugiat ipsum officia reprehenderit rerum saepe. Assumenda distinctio, voluptatibus. At consectetur cumque enim error laudantium mollitia obcaecati!
+            | Jaosn M Design is s aweb design and development agency. Based in Brisbane Australia, we are committed to helping our clients achieve success online. Using latest web design standards and technologies we bring clients the best possible solution for their online needs.
       .col-md-3.col-sm-6
         .content-wrap.widget-contact
           h4 Contact info
@@ -24,32 +24,18 @@ section#footer-widgets.section.footer-widgets.dark-bg
         .content-wrap.widget-recent-posts
           h4 Recent Posts
           ul
+            | {% for post in site.posts limit: 3 %}
             li
-              a.post-title(href='#') Lorem ipsum dolor sit amet
-              |                             by
-              a.author(href='#') Jhon Smith
-            li
-              a.post-title(href='#') Lorem ipsum dolor sit amet
-              |                             by
-              a.author(href='#') Jhon Smith
-            li
-              a.post-title(href='#') Lorem ipsum dolor sit amet
-              |                             by
-              a.author(href='#') Jhon Smith
+              a.post-title(href='{{post.url}}') {{post.title}}
+              | by &nbsp
+              a.author(href='//medium.com/@Jason_Matthew') Jason
+            | {% endfor %}
       .col-md-3.col-sm-6
         .content-wrap.widget-gallery
-          h4 Photo Gallery
+          h4 Recent Projects
           .lightbox-gallery
-            a(href='assets/images/work/01.jpg')
-              img(src='assets/images/work/01.jpg', alt='')
-            a(href='assets/images/work/02.jpg')
-              img(src='assets/images/work/02.jpg', alt='')
-            a(href='assets/images/work/03.jpg')
-              img(src='assets/images/work/03.jpg', alt='')
-            a(href='assets/images/work/04.jpg')
-              img(src='assets/images/work/04.jpg', alt='')
-            a(href='assets/images/work/05.jpg')
-              img(src='assets/images/work/05.jpg', alt='')
-            a(href='assets/images/work/06.jpg')
-              img(src='assets/images/work/06.jpg', alt='')
+            | {% for work in site.portfolio reversed limit: 6 %}
+            a(href='/{{work.thumbnail}}')
+              img.img-responsive(src='/{{work.thumbnail}}')
+            | {% endfor %}
 // Footer widgets
