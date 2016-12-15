@@ -11,4 +11,6 @@ collections:
     permalink: /portfolio/:title/
   testimonials:
     output: false
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
