@@ -1,6 +1,6 @@
 ---
 layout: blog-single
-title:  "You Don’t Need a Bigger Logo"
+title:  "Include PLugins in WordPress Theme"
 date:   2016-06-21
 author: Jason
 thumbnail: /assets/images/posts/advanced-custom-fields.jpg
