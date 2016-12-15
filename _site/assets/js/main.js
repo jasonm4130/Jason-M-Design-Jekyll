@@ -1983,3 +1983,10 @@ $("#playVideo").click(function(e){
     $("#video").hide();
     $("#video-container").fadeIn();
 });
+
+/*------------------------------------------
+ Match Height for Testimonials
+ ------------------------------------------*/
+ $(function() {
+     $('#testimonials-carousel .item').matchHeight();
+ });

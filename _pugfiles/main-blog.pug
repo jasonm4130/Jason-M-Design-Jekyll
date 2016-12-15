@@ -8,25 +8,27 @@ section#blog.section.blog
     //
     #blogContent.section-content
       .row
+        | {% for post in site.posts limit: 4%}
         .col-sm-6.col-md-4
           .blog-post
             header
               h4.date
-                | 29
+                | {{post.date | date: '%d'}}
                 br
-                | Aug
+                | {{post.date | date: '%b'}}
               .blog-element
-                img.img-responsive(src='assets/images/blog/1.jpg', alt='')
+                img.img-responsive(src='{{post.thumbnail}}')
             .blog-content
               h4
-                a(href='blog__single__right_sidebar.html') Why Billionaires join Gates Giving Pledge
+                a(href='{{post.url}}') {{post.title}}
               .post-meta
                 span
                   | By
-                  a(href='#') Prium
+                  a(href='//medium.com/@Jason_Matthew') Jason
                 span
                   a(href='#') 30 Comments
               p They signed the Giving Pledge -- an effort started in 2010 by ...
+        | {% endfor %}
         .col-sm-6.col-md-4
           .blog-post
             header
