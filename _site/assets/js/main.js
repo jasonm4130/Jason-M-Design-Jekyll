@@ -1990,3 +1990,7 @@ $("#playVideo").click(function(e){
  $(function() {
      $('#testimonials-carousel .item').matchHeight();
  });
+
+ $(function() {
+     $('.section.blog .blog-element img').matchHeight();
+ });

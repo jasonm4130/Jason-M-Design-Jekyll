@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	
+	
+
+	<title>Jason M Design - Portfolio - Sync Atom with Dropbox</title>
+	<link href="/assets/images/favicons/favicon.ico" rel="shortcut icon">
+	<link href="/assets/images/favicons/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+	<link href="/assets/images/favicons/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+	<link href="/assets/images/favicons/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+	<link href="/assets/images/favicons/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+	<link href="/assets/images/favicons/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	<link href="/assets/images/favicons/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+	<link href="/assets/images/favicons/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+	<link href="/assets/images/favicons/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+	<link href="/assets/images/favicons/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+	<link href="/assets/images/favicons/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
+	<link href="/assets/images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+	<link href="/assets/images/favicons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+	<link href="/assets/images/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+	<link href="/assets/images/favicons/manifest.json" rel="manifest">
+	<meta content="#000000" name="msapplication-TileColor">
+	<meta content="/assets/images/favicons/ms-icon-144x144.png" name="msapplication-TileImage">
+	<meta content="#000000" name="theme-color"><!-- css -->
+	<link href="/assets/lib/owlcarousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="/assets/lib/owlcarousel/owl-carousel/owl.theme.css" rel="stylesheet">
+	<link href="/assets/lib/FlexSlider/flexslider.css" rel="stylesheet">
+	<link href="/assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+	<link href="/assets/css/main.css" rel="stylesheet">
+	<link href="/assets/css/ie_fix.css" rel="stylesheet">
+	<script src="/assets/lib/components-modernizr/modernizr.js">
+	</script>
+	<script src="/assets/lib/jquery/dist/jquery.js">
+	</script>
+	<script src="/assets/lib/bootstrap/dist/js/bootstrap.js">
+	</script>
+</head>
+
+<body data-offset="100" data-spy="scroll" data-target="#main-nav-collapse">
+	<div class="page-loader">
+		<div class="loader">
+			Loading...
+		</div>
+	</div>
+  <!-- Fixed Top Navigation--><nav class="navbar navbar-fixed-top main-navigation" id="fixedTopNav" itemscope="" itemtype="https://schema.org/SiteNavigationElement" role="navigation"><div class="container"><div class="navbar-header"><button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-nav-collapse"><span class="sr-only">Toggle navigation</span><span class="ion-drag"></span></button><!-- Logo--><div class="navbar-brand" itemscope="" itemtype="https://schema.org/Organization"><span class="sr-only" itemprop="name">Jason M Design</span><a itemprop="url" href="/"><img src="/assets/images/brand.png" alt="Jason M Design logo"/></a></div><!-- /Logo--></div><!-- /.navbar-header--><!-- Navigation Links--><div class="collapse navbar-collapse" id="main-nav-collapse"><ul class="nav navbar-nav navbar-right" role="menu"><li><a href="/"> Home</a></li><li><a href="/about-us">About Us</a></li><li><a href="/our-services">Our Services</a></li><li><a href="/portfolio">Portfolio</a></li><li><a class="active" href="/blog">Blog</a></li><li><a href="/contact">Contact</a></li></ul></div><!-- /Navigation Links--></div><!-- /.container--></nav><!-- /Fixed Top Navigation-->
+  <header class="home-parallax home-fade dark-bg header-inner" id="header"><div class="color-overlay"></div><div class="container"><h1>Sync Atom with Dropbox</h1><div class="breadcrumb"><a href="/">Home</a><i class="fa fa-angle-double-right"></i><a href="/blog">Blog</a><i class="fa fa-angle-double-right"></i><a href="#">Sync Atom with Dropbox</a></div></div></header>
+  <section class="section blog blog-standard" id="blog-single"><div class="container"><div class="row"><div class="col-md-8 col-md-offset-2"><!-- Blog Post--><div class="row blog-post"><div class="col-md-12"><div class="featured-image"><img class="img-responsive" src=""/></div><h2 class="post-title">Sync Atom with Dropbox<div class="post-meta">by<a href="//medium.com/@Jason_Matthew">Jason</a><span>|</span>21 June, 2016<span>|</span>Programing / Web Development</div></h2><div class="post-content"><p><img src="/assets/images/posts/sync-atom.jpg" alt="Sync Atom with Dropbox" /></p>
+
+<p>This is a quick tutorial on how to sync the Atom code editor setup between PC’s running windows. Using dropbox or any other cloud storage service.</p>
+
+<p>Using a laptop that I can take between clients work and home is great, but I also love the benefits that a standard desktop offers me. So I use both as I am sure many many others do. I do front-end development and design, that’s my job. I rely on my code editor for daily tasks. Switching between two PC’s with slightly different configurations is an annoyance that I don’t want to deal with.</p>
+
+<p>I used a sync extension for Atom which helped the problem greatly and saved me a lot of time. This worked well but it wasn’t a perfect solution. My plugins would need updating on both computers whenever I fired up Atom. Some settings for whatever reason just didn’t copy across with the sync plugin.</p>
+
+<p>This is why I decided to come up with my own better solution to the problem. The technique I am going to describe can be used for a many of apps and programs, so keep it in mind for other problems like this also.</p>
+
+<h2 id="what-youll-need">What you’ll need</h2>
+
+<ul>
+  <li>Dropbox (or another cloud storage service) set-up on both PC’s</li>
+  <li>SymLink Creator (this can also be done in command prompt but I have found the GUI to be extremely helpful) which can be found here</li>
+  <li>Long Path Eraser (This may not be needed but it’s a useful tool to be aware of anyway) found here</li>
+  <li>A zip tool like 7 Zip</li>
+</ul>
+
+<h2 id="what-we-are-going-to-be-doing">What we are going to be doing</h2>
+
+<p>The idea behind what we are doing is pretty simple. If you have done any research into this topic before I am sure you will have come across similar methods.</p>
+
+<p>We are going to be moving the Atom packages, settings and extensions folder to our cloud storage (Dropbox). Then linking the default locations for this on both computers to this one folder.</p>
+
+<h2 id="moving-the-file">Moving the File</h2>
+
+<p>To start our process we need to move the Atom folder from its current location. It is kept in your user’s current directory. On windows, an easy shortcut to get here is to paste the following code into the bar in any explorer window.</p>
+
+<pre><code>%UserProfile%
+</code></pre>
+
+<p>This in your user’s directory you should see a file titled .atom this is the one we need. I had to use 7 Zip to compress the folder to copy it across to Dropbox, as the file paths were too long to use the normal copy-paste operation.</p>
+
+<p>I zipped the file and then moved the zipped file over to Dropbox. It doesn’t matter where you place the file in Dropbox but I prefer somewhere that makes sense and is out of the way.</p>
+
+<p>From here you will need to extract the folder making sure to select the option “extract to .atom/”. This will add your folder to Dropbox which will keep it in sync for us.</p>
+
+<h2 id="linking-the-folders">Linking the folders</h2>
+
+<p>This is where the magic happens. We are going to link the old file path to the new path that will be in sync. This will need to be done on both computers.</p>
+
+<p>The first thing we need to do is delete the old .atom folder. For me because the file path names were too long. I needed to use the Long Path Eraser Tool at this point because the file names were too long for windows to handle natively. If you have different settings on the two PC’s only the settings and extensions from the copied folder will be kept.</p>
+
+<p>After deleting the old .atom folders in your user directories, fire up Symlink Creator.</p>
+
+<p><img src="/assets/images/posts/sync-settings.jpg" alt="Symlink Settings" /></p>
+
+<p>In the link folder section, you are going to need to put the file path that we took the original .atom folder from. For me, this was C:\Users\Jason. You will also need to name the link .atom</p>
+
+<p>In the destination folder, you will need to put the path to the folder in Dropbox. Remembering that these paths may be different on your different PCs.</p>
+
+<p>Double check that you have selected “folder symbolic link” as the type at the top, and symbolic link in the destination folder down the bottom.</p>
+
+<p>From here you can simply click create a link and that’s it you’re finished. Remember that this needs to be done on both computers.</p>
+</div><div id="disqus_thread"></div><noscript>Please enable JavaScript to view the<a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript></div></div><!-- Blog Post end--></div></div></div></section>
+	<!-- Footer widgets--><section class="section footer-widgets dark-bg" id="footer-widgets"><div class="container"><div class="row"><div class="col-md-3 col-sm-6"><div class="content-wrap widget-text"><h4>About JMD</h4><p>Jaosn M Design is s aweb design and development agency. Based in Brisbane Australia, we are committed to helping our clients achieve success online. Using latest web design standards and technologies we bring clients the best possible solution for their online needs.</p></div></div><div class="col-md-3 col-sm-6"><div class="content-wrap widget-contact"><h4>Contact info</h4><ul><li><i class="ion-home"></i> Brisbane Australia</li><li><i class="ion-social-skype-outline"></i> jason.matthew17</li><li><i class="ion-email"></i> jason@jasonmdesign.com</li></ul></div></div><div class="col-md-3 col-sm-6"><div class="content-wrap widget-recent-posts"><h4>Recent Posts</h4><ul><li><a class="post-title" href="/blog/You-dont-need-a-bigger-logo/">You Don’t Need a Bigger Logo</a>by &nbsp<a class="author" href="//medium.com/@Jason_Matthew">Jason</a></li><li><a class="post-title" href="/blog/WordPress-including-plugins/">You Don’t Need a Bigger Logo</a>by &nbsp<a class="author" href="//medium.com/@Jason_Matthew">Jason</a></li><li><a class="post-title" href="/blog/WordPress-Speed-Optimization/">WordPress Speed Optimization</a>by &nbsp<a class="author" href="//medium.com/@Jason_Matthew">Jason</a></li></ul></div></div><div class="col-md-3 col-sm-6"><div class="content-wrap widget-gallery"><h4>Recent Projects</h4><div class="lightbox-gallery"><a href="/assets/images/portfolio/haz-gas.jpg"><img class="img-responsive" src="/assets/images/portfolio/haz-gas.jpg"/></a><a href="/assets/images/portfolio/spot-the-difference.jpg"><img class="img-responsive" src="/assets/images/portfolio/spot-the-difference.jpg"/></a><a href="/assets/images/portfolio/masonboro-partners.jpg"><img class="img-responsive" src="/assets/images/portfolio/masonboro-partners.jpg"/></a><a href="/assets/images/portfolio/compass-psychology.jpg"><img class="img-responsive" src="/assets/images/portfolio/compass-psychology.jpg"/></a><a href="/assets/images/portfolio/lynk.jpg"><img class="img-responsive" src="/assets/images/portfolio/lynk.jpg"/></a><a href="/assets/images/portfolio/rimac-storage-systems.jpg"><img class="img-responsive" src="/assets/images/portfolio/rimac-storage-systems.jpg"/></a></div></div></div></div></div></section><!-- Footer widgets-->
+	<!-- footer--><footer class="footer" id="footer"><div class="container"><div class="row"><div class="col-md-3 col-sm-4"><p class="copyright text-xs-center">© 2016 Jason M Design</p></div><div class="col-md-5 col-sm-4"><ul class="footer-social-block"><li><a href="//www.facebook.com/jasonmdesign/"><i class="fa fa-facebook"></i></a></li><li><a href="//twitter.com/JasonMDesign"><i class="fa fa-twitter"></i></a></li><li><a href="//medium.jasonmdesign.com"><i class="fa fa-medium"></i></a></li><li><a href="//www.google.com/+Jasonmdesignbrisbane"><i class="fa fa-google-plus"></i></a></li><li><a href="//www.youtube.com/channel/UCTqm_grvr13d4MhPxT36Hsg"><i class="fa fa-youtube"></i></a></li></ul></div><div class="col-md-4 col-sm-4"><div class="footer-menu text-xs-center"><a href="#">Privacy Policy</a>&nbsp | &nbsp<a href="#">Terms & Conditions</a></div></div></div></div></footer><!-- #footer--><a id="totop" href="#totop"><i class="fa fa-angle-double-up"></i></a>
+  <!-- Scripts -->
+	<!-- js -->
+
+	<script src="/assets/lib/imagesloaded/imagesloaded.pkgd.min.js">
+	</script>
+	<script src="/assets/lib/isotope/dist/isotope.pkgd.min.js">
+	</script>
+	<script src="/assets/lib/owlcarousel/owl-carousel/owl.carousel.js">
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript">
+	</script>
+	<script src="/assets/lib/waypoints/lib/jquery.waypoints.min.js">
+	</script>
+	<script src="/assets/lib/waypoints/lib/shortcuts/inview.min.js">
+	</script>
+	<script src="/assets/lib/FlexSlider/jquery.flexslider.js">
+	</script>
+	<script src="/assets/lib/simple-text-rotator/jquery.simple-text-rotator.js">
+	</script>
+	<script src="/assets/lib/jquery.mb.YTPlayer/dist/jquery.mb.YTPlayer.min.js">
+	</script>
+	<script src="/assets/lib/magnific-popup/dist/jquery.magnific-popup.js">
+	</script>
+	<script src="/assets/js/main.js">
+	</script> <!-- Google Analytics -->
+
+	<script>
+	 window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	 ga('create', 'UA-66101725-1', 'auto');
+	 ga('send', 'pageview');
+	</script>
+  <script async src='https://www.google-analytics.com/analytics.js'>
+	</script> <!-- End Google Analytics -->
+	 <!-- / Scripts -->
+	 <!--[if lt IE 10]>
+  <script>
+  $('input, textarea').placeholder();
+</script>
+<![endif]-->
+</body>
+</html>
