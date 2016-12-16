@@ -1,7 +1,7 @@
 ---
 layout: blog-single
 title:  "Include PLugins in WordPress Theme"
-date:   2016-06-21
+date:   2016-09-12
 author: Jason
 thumbnail: /assets/images/posts/advanced-custom-fields.jpg
 excerpt: A great way to use a plugin to enhance your WordPress development potential and speed.

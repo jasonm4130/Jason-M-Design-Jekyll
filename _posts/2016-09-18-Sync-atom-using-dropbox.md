@@ -1,7 +1,7 @@
 ---
 layout: blog-single
 title:  "Sync Atom with Dropbox"
-date:   2016-06-21
+date:   2016-09-18
 author: Jason
 thumbnail: /assets/images/posts/sync-atom.jpg
 excerpt: Syncing your code editor settings so everything is just how you like it no matter the computer.

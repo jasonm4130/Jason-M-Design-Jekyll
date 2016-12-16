@@ -1,7 +1,7 @@
 ---
 layout: blog-single
 title:  "You Don’t Need a Bigger Logo"
-date:   2016-06-21
+date:   2015-09-16
 author: Jason
 thumbnail: /assets/images/posts/bigger-logo.jpg
 excerpt: Why web designers are asked every day to make the logo bigger, and why you should say no.
