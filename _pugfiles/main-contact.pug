@@ -10,7 +10,7 @@ section#contact.section.contact
       .row
         .col-md-6.col-sm-5
           h5 Feel free to drop us a line!
-          form#contactForm.contact-form(name="main-contact" netlify)
+          <form id="contactForm" class="contact-form" name="main-contact" netlify>
             .form-group
               input#name.form-control(name='name', placeholder='Your Name', type='text', required='')
             .form-group
@@ -19,6 +19,7 @@ section#contact.section.contact
               textarea#message.form-control(name='massage', placeholder='Type your message here', rows='5', required='')
             #contactFormResponse
             button#cfsubmit.btn.btn-dark.btn-block.contact-submit(type='submit') Give us a shout
+          </form>
         .col-md-6.col-sm-7
           h5 Our Headquaters
           .google-map
