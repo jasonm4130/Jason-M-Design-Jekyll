@@ -148,3 +148,5 @@ gulp.task('watch', function () {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'pug', 'watch', 'uncss']);
+
+gulp.task('build', ['pug', 'uncss', 'sass', 'jekyll-build']);
