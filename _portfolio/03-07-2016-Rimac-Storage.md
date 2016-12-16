@@ -4,7 +4,7 @@ title:  "Rimac Storage"
 date:   2015-08-01
 categories:
 - web-design
-thumbnail: assets/images/portfolio/rimac-storage-systems.jpg
+thumbnail: assets/images/portfolio/home/rimac-storage-systems.jpg
 lead: An update to an existing website, adding responsive code and a new look
 company: "Rimac Storage Systems"
 website: "rimacstoragesystems.com.au"

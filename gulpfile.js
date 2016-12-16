@@ -149,4 +149,4 @@ gulp.task('watch', function () {
  */
 gulp.task('default', ['browser-sync', 'pug', 'watch', 'uncss']);
 
-gulp.task('build', ['pug', 'uncss', 'sass', 'jekyll-build']);
+gulp.task('build', ['pug', 'uncss', 'sass', 'image-min', 'jekyll-build']);

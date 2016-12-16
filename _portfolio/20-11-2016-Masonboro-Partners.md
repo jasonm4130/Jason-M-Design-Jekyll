@@ -5,7 +5,7 @@ date:   2016-11-20
 categories:
 - web-design
 - wordpress
-thumbnail: assets/images/portfolio/masonboro-partners.jpg
+thumbnail: assets/images/portfolio/home/masonboro-partners.jpg
 lead: A re-design of their existing website.
 company: "Masonboro Partners"
 website: "masonboropartners.com"
