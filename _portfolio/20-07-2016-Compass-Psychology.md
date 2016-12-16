@@ -6,15 +6,16 @@ categories:
 - web-design
 - wordpress
 thumbnail: assets/images/portfolio/compass-psychology.jpg
-lead: An update to an existing website, adding responsive code and a new look
+lead: A brand new website to represent Compass Psychology online.
 company: "Compass Psychology"
 website: "compasspsychology.com"
 images:
-- assets/images/portfolio/rimac-storage-systems.jpg
-- assets/images/portfolio/masonboro-partners.jpg
-- assets/images/portfolio/202-strong.jpg
+- assets/images/portfolio/compass-psychology.jpg
+- assets/images/portfolio/compass-psychology-resources.jpg
 ---
 
-Rimac Storage Systems, was a new design for a website that had aged. Their old website although it still had a modern feel wasn't up to the standards that were expected. Their old website was also missing the hugely important responsive design that it standard with all modern website.
+Working closely with Compass Psychology to help create an amazing website to represent this newly formed business was a blast! We worked closely together to ensure that the website would be appealing to new clients and allow Compass Psychology to present their professionalism, along with their years of experience and great attitude.
 
-As such these were two main focuses in the re-design of this website. Overall the project was completed successfully with a great outcome for the business.
+This project has been a great success allowing Compass Psychology to have the web presence they knew they needed.
+
+Creating the website was just the first step however and now Compass Psychology is continuing to use strategies we created for them to continually build their online presence in social medial platforms.

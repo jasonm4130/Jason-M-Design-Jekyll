@@ -6,15 +6,15 @@ categories:
 - web-design
 - wordpress
 thumbnail: assets/images/portfolio/masonboro-partners.jpg
-lead: An update to an existing website, adding responsive code and a new look
+lead: A re-design of their existing website.
 company: "Masonboro Partners"
 website: "masonboropartners.com"
 images:
-- assets/images/portfolio/rimac-storage-systems.jpg
 - assets/images/portfolio/masonboro-partners.jpg
-- assets/images/portfolio/202-strong.jpg
 ---
 
-Rimac Storage Systems, was a new design for a website that had aged. Their old website although it still had a modern feel wasn't up to the standards that were expected. Their old website was also missing the hugely important responsive design that it standard with all modern website.
+Masonboro Partners had an existing site with some major security concerns and display problems. Initially we helped them to resolve these security concerns and restore their site to the way it originally was.
 
-As such these were two main focuses in the re-design of this website. Overall the project was completed successfully with a great outcome for the business.
+Throughout time however the project evolved to become much more than fixing some errors on the site. We created a completely custom theme for Masonboro Partners, this allowed for much better load times and a more professional look, compared to their old generic template.
+
+After completion of the project we have remained in touch with Masonboro Partners and continue to provide maintenance and support for their website whenever they need it.

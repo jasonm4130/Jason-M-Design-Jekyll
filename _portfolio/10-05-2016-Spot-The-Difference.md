@@ -5,15 +5,15 @@ date:   2016-12-10
 categories:
 - wordpress
 thumbnail: assets/images/portfolio/spot-the-difference.jpg
-lead: An update to an existing website, adding responsive code and a new look
+lead: A landing page selling t-shirts to raise money for Skin Cancer.
 company: "Spot The Difference"
-website: "spotthedifference.com"
+website: "spotthedifferenceshirt.com"
 images:
 - assets/images/portfolio/spot-the-difference.jpg
-- assets/images/portfolio/masonboro-partners.jpg
-- assets/images/portfolio/202-strong.jpg
 ---
 
-Rimac Storage Systems, was a new design for a website that had aged. Their old website although it still had a modern feel wasn't up to the standards that were expected. Their old website was also missing the hugely important responsive design that it standard with all modern website.
+The Website designed for the Spot the Difference Campaign was a huge success. Allowing the client to sell all their stock within days of launching. This in turn enabled them to raise much needed funds for Skin Cancer charities.
 
-As such these were two main focuses in the re-design of this website. Overall the project was completed successfully with a great outcome for the business.
+With the site needing to be developed in a rapid fashion with only a few days between initial contact and launch, this contributed greatly to the success of the site.
+
+Overall the spot the difference shirts website allowed Ariel to achieve part of her goals to accomplish a greater awareness for skin cancer and funds to help with this. This in turn saw her become Miss World New Zealand Tourism International with opportunities to continue to positively impact many lives.
