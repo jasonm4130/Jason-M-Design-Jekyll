@@ -4,7 +4,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var pug         = require('gulp-pug');
-var imagemin    = require('gulp-imagemin');
+var imageop     = require('gulp-image-optimization');
 var cache       = require('gulp-cache');
 var uncss       = require('gulp-uncss');
 var plumber     = require('gulp-plumber');
@@ -120,10 +120,10 @@ gulp.task('pug', function(){
 /**
   * Image min Task
   */
-gulp.task('image-min', function(){
-  return gulp.src('assets/images/**/*.+(png|jpg|jpeg|gif|svg)')
+gulp.task('image-op', function(){
+  return gulp.src('assets/images/**/*.+(png|jpg|jpeg|gif)')
   // Caching images that ran through imagemin
-  .pipe(cache(imagemin({
+  .pipe(cache(imageop({
       interlaced: true,
       progressive: true,
       optimizationLevel: 5
@@ -140,7 +140,7 @@ gulp.task('watch', function () {
     gulp.watch(['_pugfiles/**/*.pug'], ['pug']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*', '_posts/*.md', '_portfolio/**/*.md', '_testimonials/**/*.md', 'portfolio/*.html', 'about-us/*.html', 'our-services/*.html', 'blog/*.html'], ['jekyll-rebuild', 'uncss']);
     gulp.watch('assets/js/**/*.js', ['jekyll-rebuild']);
-    gulp.watch('assets/images/**/*.+(png|jpg|gif|svg)', ['image-min']);
+    gulp.watch('assets/images/**/*.+(png|jpg|gif|svg)', ['image-op']);
 });
 
 /**
@@ -149,4 +149,4 @@ gulp.task('watch', function () {
  */
 gulp.task('default', ['browser-sync', 'pug', 'watch', 'uncss']);
 
-gulp.task('build', ['pug', 'uncss', 'sass', 'image-min', 'jekyll-build']);
+gulp.task('build', ['pug', 'uncss', 'sass', 'image-op', 'jekyll-build']);
