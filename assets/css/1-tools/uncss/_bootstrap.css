@@ -91,15 +91,6 @@ input::-moz-focus-inner {
 input {
   line-height: normal;
 }
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-fieldset {
-  padding: .35em .625em .75em;
-  margin: 0 2px;
-  border: 1px solid #c0c0c0;
-}
 textarea {
   overflow: auto;
 }
@@ -211,6 +202,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
 .img-circle {
   border-radius: 50%;
 }
@@ -244,19 +248,11 @@ h6 {
   line-height: 1.1;
   color: inherit;
 }
-h1 small {
-  font-weight: normal;
-  line-height: 1;
-  color: #777;
-}
 h1,
 h2,
 h3 {
   margin-top: 20px;
   margin-bottom: 10px;
-}
-h1 small {
-  font-size: 65%;
 }
 h4,
 h5,
@@ -305,6 +301,9 @@ small {
 .text-center {
   text-align: center;
 }
+.text-primary {
+  color: #337ab7;
+}
 ul,
 ol {
   margin-top: 0;
@@ -331,6 +330,13 @@ blockquote {
 }
 blockquote p:last-child {
   margin-bottom: 0;
+}
+.blockquote-reverse {
+  padding-right: 15px;
+  padding-left: 0;
+  text-align: right;
+  border-right: 5px solid #eee;
+  border-left: 0;
 }
 address {
   margin-bottom: 20px;
@@ -524,12 +530,6 @@ pre code {
 .table-hover > tbody > tr.info:hover > td,
 .table-hover > tbody > tr.info:hover > th {
   background-color: #c4e3f3;
-}
-fieldset {
-  min-width: 0;
-  padding: 0;
-  margin: 0;
-  border: 0;
 }
 label {
   display: inline-block;
