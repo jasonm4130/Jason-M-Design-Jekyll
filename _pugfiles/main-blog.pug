@@ -17,7 +17,7 @@ section#blog.section.blog
                 br
                 | {{post.date | date: '%b'}}
               .blog-element
-                img.img-responsive(src='{{post.thumbnail}}')
+                img.img-responsive(src='{{post.thumbnail}}-small.jpg')
             .blog-content
               h4
                 a(href='{{post.url}}') {{post.title}}

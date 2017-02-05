@@ -3,7 +3,7 @@ layout: blog-single
 title:  "Why your website needs to be on point."
 date:   2017-01-11
 author: Jason
-thumbnail: /assets/images/posts/your-website-on-point.jpg
+thumbnail: /assets/images/posts/your-website-on-point
 excerpt: Your website is your home base, the place for you to build your amazing companies presence online. Find out why.
 categories:
 - blog

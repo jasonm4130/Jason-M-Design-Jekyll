@@ -4,7 +4,7 @@ title:  "Spot The Difference"
 date:   2016-12-10
 categories:
 - wordpress
-thumbnail: assets/images/portfolio/home/spot-the-difference.jpg
+thumbnail: assets/images/portfolio/home/spot-the-difference
 lead: A landing page selling t-shirts to raise money for Skin Cancer.
 company: "Spot The Difference"
 website: "spotthedifferenceshirt.com"

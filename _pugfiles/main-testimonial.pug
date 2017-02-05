@@ -17,7 +17,7 @@ section#testimonial.section.overlay-1.testimonial.bg-image.dark-bg
             #testimonials-carousel.owl-carousel
               | {% for testimonial in site.testimonials %}
               .item
-                .review(data-client-image='{{testimonial.thumbnail}}')
+                .review(data-client-image='{{testimonial.thumbnail}}-small.jpg')
                   blockquote
                     | {{testimonial.content}}
                   h4.reviewer {{testimonial.title}}

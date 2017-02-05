@@ -3,7 +3,7 @@ layout: blog-single
 title:  "WordPress Speed Optimization"
 date:   2016-08-21
 author: Jason
-thumbnail: /assets/images/posts/wordpress-speed-optimization.jpg
+thumbnail: /assets/images/posts/wordpress-speed-optimization
 excerpt: WordPress speed optimization is crucial to you and your websites success, however it is often overlooked.
 categories:
 - WordPress

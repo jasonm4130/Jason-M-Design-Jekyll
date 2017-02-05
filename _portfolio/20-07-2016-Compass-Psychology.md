@@ -5,7 +5,7 @@ date:   2016-07-20
 categories:
 - web-design
 - wordpress
-thumbnail: assets/images/portfolio/home/compass-psychology.jpg
+thumbnail: assets/images/portfolio/home/compass-psychology
 lead: A brand new website to represent Compass Psychology online.
 company: "Compass Psychology"
 website: "compasspsychology.com"

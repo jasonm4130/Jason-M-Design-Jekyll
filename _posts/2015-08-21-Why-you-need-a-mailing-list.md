@@ -3,7 +3,7 @@ layout: blog-single
 title:  "Why you need a mailing list and how to build one."
 date:   2015-08-21
 author: Jason
-thumbnail: /assets/images/posts/email-marketing-diagram.jpg
+thumbnail: /assets/images/posts/email-marketing-diagram
 excerpt: Think about the hundreds of people who visit your website every day week or month. Now imagine that you had a simple way of keeping in contact with each and every one of these people. That’s what an email list can do for you and your business.
 categories:
 - blog

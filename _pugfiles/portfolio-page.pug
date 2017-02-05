@@ -27,7 +27,7 @@ section#portfolio.section.portfolio
       | {% for work in site.portfolio reversed %}
       <li class="{{ work.categories | join: ' ' }}" data-category='{{ work.categories | join: ' ' }}'>
         a(href='{{work.url}}')
-          img(src='/{{work.thumbnail}}')
+          img(src='/{{work.thumbnail}}-small.jpg')
           .portfolio-detail-overlay
             .middle-align-wrap
               .middle-align-cell

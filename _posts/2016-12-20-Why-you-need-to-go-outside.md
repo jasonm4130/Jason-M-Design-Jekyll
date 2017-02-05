@@ -3,7 +3,7 @@ layout: blog-single
 title:  "Why Web Professionals need to go outside."
 date:   2016-12-20
 author: Jason
-thumbnail: /assets/images/posts/go-outside.jpg
+thumbnail: /assets/images/posts/go-outside
 excerpt: Web Professionals are always looking for new clients, this post explains why.
 categories:
 - Web Design

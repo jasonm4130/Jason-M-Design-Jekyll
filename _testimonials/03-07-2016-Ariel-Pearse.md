@@ -1,7 +1,7 @@
 ---
 title:  "Ariel Pearse"
 date:   2016-07-03
-thumbnail: /assets/images/testimonials/ariel-profile.jpg
+thumbnail: /assets/images/testimonials/ariel-profile
 designation: "Miss World NZ"
 ---
 
