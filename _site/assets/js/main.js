@@ -1946,5 +1946,5 @@ $("#playVideo").click(function(e){
  });
 
  $(function() {
-     $('.section.blog .blog-element img').matchHeight();
+     $('.section.blog .section-content .blog-post').matchHeight();
  });
