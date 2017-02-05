@@ -9,6 +9,7 @@ categories:
 - Web Design
 - UX
 - Content
+meta: Technology in increasing the amount of interactions we have every day. Sometimes people just want to have a personal interaction though. From the Jason M Design blog.
 ---
 
 ![You are missing](/assets/images/posts/you-are-missing.jpg)

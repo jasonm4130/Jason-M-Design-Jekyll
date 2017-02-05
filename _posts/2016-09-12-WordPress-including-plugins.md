@@ -8,6 +8,7 @@ excerpt: A great way to use a plugin to enhance your WordPress development poten
 categories:
 - WordPress
 - Web Development
+meta: The right way to include a plugin you need for you WordPress theme. from the blog at Jason M Design.
 ---
 
 ![Advanced Custom Fields](/assets/images/posts/advanced-custom-fields.jpg)

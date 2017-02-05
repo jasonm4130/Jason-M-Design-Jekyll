@@ -8,6 +8,7 @@ excerpt: Why web designers are asked every day to make the logo bigger, and why 
 categories:
 - Web Design
 - Content
+meta: Some basic design principals for every web designer, and why the client isn't always right. From the blog at Jason M Design
 ---
 
 ![Jason M Design Big Logo](/assets/images/posts/bigger-logo.jpg)

@@ -8,6 +8,7 @@ excerpt: WordPress speed optimization is crucial to you and your websites succes
 categories:
 - WordPress
 - Optimization
+meta: A fast website is important. Find out how to speed up your WordPress site, from start to finish. From the Jason M Design blog.
 ---
 
 ![WordPress Speed Optimization](/assets/images/posts/wordpress-speed-optimization.jpg)

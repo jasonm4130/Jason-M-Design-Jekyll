@@ -8,6 +8,7 @@ excerpt: Syncing your code editor settings so everything is just how you like it
 categories:
 - Programing
 - Web Development
+meta: Learn how to keep your projects and tools in sync using Dropbox. From the Jason M Design blog.
 ---
 
 ![Sync Atom with Dropbox](/assets/images/posts/sync-atom.jpg)
