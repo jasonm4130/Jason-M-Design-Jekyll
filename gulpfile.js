@@ -253,4 +253,4 @@ gulp.task('watch', function () {
  */
 gulp.task('default', ['browser-sync', 'pug', 'watch', 'uncss']);
 
-gulp.task('build', ['pug', 'uncss', 'sass', 'image-op', 'jekyll-build']);
+gulp.task('build', ['pug', 'uncss', 'sass', 'jekyll-build']);
