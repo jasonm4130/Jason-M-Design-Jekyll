@@ -78,8 +78,7 @@ button {
 button {
   text-transform: none;
 }
-button,
-input[type="submit"] {
+button {
   -webkit-appearance: button;
   cursor: pointer;
 }
@@ -531,12 +530,6 @@ pre code {
 .table-hover > tbody > tr.info:hover > th {
   background-color: #c4e3f3;
 }
-label {
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
 .form-control {
   display: block;
   width: 100%;
@@ -980,18 +973,6 @@ tbody.collapse.in {
 .btn-group-justified > .btn-group .dropdown-menu {
   left: auto;
 }
-.input-group {
-  position: relative;
-  display: table;
-  border-collapse: separate;
-}
-.input-group .form-control {
-  position: relative;
-  z-index: 2;
-  float: left;
-  width: 100%;
-  margin-bottom: 0;
-}
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
@@ -1014,29 +995,6 @@ textarea.input-group-sm > .input-group-addon,
 textarea.input-group-sm > .input-group-btn > .btn {
   height: auto;
 }
-.input-group-addon,
-.input-group .form-control {
-  display: table-cell;
-}
-.input-group .form-control:not(:first-child):not(:last-child) {
-  border-radius: 0;
-}
-.input-group-addon {
-  width: 1%;
-  white-space: nowrap;
-  vertical-align: middle;
-}
-.input-group-addon {
-  padding: 6px 12px;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1;
-  color: #555;
-  text-align: center;
-  background-color: #eee;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
 .input-group-addon.input-sm {
   padding: 5px 10px;
   font-size: 12px;
@@ -1052,13 +1010,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.input-group-addon:last-child,
 .input-group-btn:last-child > .dropdown-toggle {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-}
-.input-group-addon:last-child {
-  border-left: 0;
 }
 .nav {
   padding-left: 0;
@@ -1975,14 +1929,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 @-ms-viewport {
   width: device-width;
-}
-.visible-sm {
-  display: none !important;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-sm {
-    display: block !important;
-  }
 }
 @media (max-width: 767px) {
   .hidden-xs {
