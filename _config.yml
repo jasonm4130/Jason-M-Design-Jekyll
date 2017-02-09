@@ -3,6 +3,7 @@ markdown: kramdown
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 permalink: /blog/:title/
+url: https://jasonmdesign.com
 paginate: 5
 paginate_path: "/blog/page:num/"
 collections:
