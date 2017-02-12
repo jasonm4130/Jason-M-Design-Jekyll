@@ -35,7 +35,7 @@ section#footer-widgets.section.footer-widgets.dark-bg
           h4 Recent Projects
           .lightbox-gallery
             | {% for work in site.portfolio reversed limit: 6 %}
-            a(href='/{{work.thumbnail}}')
+            a(href='/{{work.thumbnail}}.jpg')
               img.img-responsive(src='/{{work.thumbnail}}-small.jpg')
             | {% endfor %}
 // Footer widgets
