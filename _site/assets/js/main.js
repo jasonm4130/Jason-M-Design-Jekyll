@@ -1946,5 +1946,9 @@ $("#playVideo").click(function(e){
  });
 
  $(function() {
-     $('.section.blog .section-content .blog-post').matchHeight();
+     $('.section.blog .section-content .blog-post .blog-content').matchHeight();
+ });
+
+ $(function() {
+     $('.section.blog .section-content .blog-post .blog-element img').matchHeight();
  });

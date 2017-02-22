@@ -9,7 +9,7 @@ section#blog.section.blog
     #blogContent.section-content
       .row
         | {% for post in site.posts limit: 4%}
-        <div class="blog-post col-sm-6 col-md-4{% if forloop.last %} visible-sm{% endif %}">
+        <div class="col-sm-6 col-md-4{% if forloop.last %} visible-sm{% endif %}">
           .blog-post
             header
               h4.date
