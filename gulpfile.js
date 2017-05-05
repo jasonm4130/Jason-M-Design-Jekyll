@@ -11,7 +11,6 @@ var gutil = require('gulp-util');
 var imageResize = require('gulp-image-resize');
 var imagemin = require('gulp-imagemin');
 var jpegtran = require('imagemin-jpegtran');
-var tinypng = require('gulp-tinypng');
 var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
 var concat = require('gulp-concat');
@@ -207,11 +206,11 @@ gulp.task('src-image', function() {
 });
 
 gulp.task('large-image-png', function() {
-    return gulp.src('assets/images/src/**/*.+(png)')
+    return gulp.src('assets/images/src/**/*.png')
         .pipe(imageResize({
             width: 1600
         }))
-        .pipe(tinypng('rzSRVam-7qL8rvKyQp9Pl_ce4w3EqGVb'))
+        .pipe(imagemin())
         .pipe(rename({
             suffix: '-large'
         }))
@@ -219,11 +218,11 @@ gulp.task('large-image-png', function() {
 });
 
 gulp.task('medium-image-png', function() {
-    return gulp.src('assets/images/src/**/*.+(png)')
+    return gulp.src('assets/images/src/**/*.png')
         .pipe(imageResize({
             width: 800
         }))
-        .pipe(tinypng('rzSRVam-7qL8rvKyQp9Pl_ce4w3EqGVb'))
+        .pipe(imagemin())
         .pipe(rename({
             suffix: '-medium'
         }))
@@ -231,11 +230,11 @@ gulp.task('medium-image-png', function() {
 });
 
 gulp.task('small-image-png', function() {
-    return gulp.src('assets/images/src/**/*.+(png)')
+    return gulp.src('assets/images/src/**/*.png')
         .pipe(imageResize({
             width: 400
         }))
-        .pipe(tinypng('rzSRVam-7qL8rvKyQp9Pl_ce4w3EqGVb'))
+        .pipe(imagemin())
         .pipe(rename({
             suffix: '-small'
         }))
@@ -243,8 +242,8 @@ gulp.task('small-image-png', function() {
 });
 
 gulp.task('src-image-png', function() {
-    return gulp.src('assets/images/src/**/*.+(png)')
-        .pipe(tinypng('rzSRVam-7qL8rvKyQp9Pl_ce4w3EqGVb'))
+    return gulp.src('assets/images/src/**/*.png')
+        .pipe(imagemin())
         .pipe(gulp.dest('assets/images/'))
 });
 
