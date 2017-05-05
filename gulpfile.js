@@ -14,6 +14,8 @@ var jpegtran = require('imagemin-jpegtran');
 var tinypng = require('gulp-tinypng');
 var rename = require('gulp-rename');
 var runSequence = require('run-sequence');
+var concat = require('gulp-concat');
+var sourcemaps = require('gulp-sourcemaps');
 
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -245,6 +247,14 @@ gulp.task('src-image-png', function() {
         .pipe(gulp.dest('assets/images/'))
 });
 
+gulp.task('scripts', function() {
+  return gulp.src(['assets/lib/imagesloaded/imagesloaded.pkgd.min.js', 'assets/lib/isotope/dist/isotope.pkgd.min.js', 'assets/lib/owlcarousel/owl-carousel/owl.carousel.js', 'assets/lib/waypoints/lib/jquery.waypoints.min.js', 'assets/lib/waypoints/lib/shortcuts/inview.min.js', 'assets/lib/FlexSlider/jquery.flexslider.js', 'assets/lib/simple-text-rotator/jquery.simple-text-rotator.js', 'assets/lib/magnific-popup/dist/jquery.magnific-popup.js', 'assets/lib/match-height/jquery.matchHeight-min.js'])
+  .pipe(sourcemaps.init())
+    .pipe(concat('plugins.js'))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('assets/js/dist/'));
+});
+
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -254,6 +264,7 @@ gulp.task('watch', function() {
     gulp.watch(['_pugfiles/**/*.pug'], ['pug']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*', '_posts/*.md', '_portfolio/**/*.md', '_testimonials/**/*.md', 'portfolio/*.html', 'about-us/*.html', 'our-services/*.html', 'blog/*.html'], ['jekyll-rebuild', 'uncss']);
     gulp.watch('assets/js/**/*.js', ['jekyll-rebuild']);
+    gulp.watch('assets/lib/**/*.js', ['scripts', 'jekyll-rebuild']);
     gulp.watch(['assets/images/src/**/*.+(jpg|jpeg)'], ['image-op-jpeg']);
     gulp.watch(['assets/images/src/**/*.png'], ['image-op-png']);
 });
@@ -263,9 +274,9 @@ gulp.task('watch', function() {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', function(done) {
-    runSequence(['pug', 'sass'], ['uncss'], ['browser-sync', 'watch']);
+    runSequence(['pug', 'sass'], ['uncss', 'scripts'], ['browser-sync', 'watch']);
 });
 
 gulp.task('build', function(done){
-  runSequence(['pug', 'sass'], ['uncss'], ['jekyll-build']);
+  runSequence(['pug', 'sass'], ['uncss',  'scripts'], ['jekyll-build']);
 });
