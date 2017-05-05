@@ -1383,38 +1383,38 @@ $(".rotate").textrotator({
 
 
 
-(function(){
-	/* ---------------------------------------------- /*
-	 * Youtube video background
-	 /* ---------------------------------------------- */
+// (function(){
+// 	/* ---------------------------------------------- /*
+// 	 * Youtube video background
+// 	 /* ---------------------------------------------- */
 
-	$(function(){
-		$("#videoBackground").mb_YTPlayer();
-	});
+// 	$(function(){
+// 		$("#videoBackground").mb_YTPlayer();
+// 	});
 
-	$('#video-play').click(function(event) {
-		event.preventDefault();
-		if ($(this).hasClass('fa-play')) {
-			$('#videoBackground').playYTP();
-		} else {
-			$('#videoBackground').pauseYTP();
-		}
-		$(this).toggleClass('fa-play fa-pause');
-		return false;
-	});
+// 	$('#video-play').click(function(event) {
+// 		event.preventDefault();
+// 		if ($(this).hasClass('fa-play')) {
+// 			$('#videoBackground').playYTP();
+// 		} else {
+// 			$('#videoBackground').pauseYTP();
+// 		}
+// 		$(this).toggleClass('fa-play fa-pause');
+// 		return false;
+// 	});
 
-	$('#video-volume').click(function(event) {
-		event.preventDefault();
-		$('#videoBackground').YTPToggleVolume();
-		$(this).toggleClass('fa-volume-off fa-volume-up');
-		return false;
-	});
-})();
+// 	$('#video-volume').click(function(event) {
+// 		event.preventDefault();
+// 		$('#videoBackground').YTPToggleVolume();
+// 		$(this).toggleClass('fa-volume-off fa-volume-up');
+// 		return false;
+// 	});
+// })();
 
-//initialize gallery images
-(function(){
-	Grid.init();
-})();
+// //initialize gallery images
+// (function(){
+// 	Grid.init();
+// })();
 
 
 
@@ -1951,4 +1951,28 @@ $("#playVideo").click(function(e){
 
  $(function() {
      $('.section.blog .section-content .blog-post .blog-element img').matchHeight();
+ });
+
+
+//  Youtube Embed
+$(function() {
+    $(".youtube").each(function() {
+        // Based on the YouTube ID, we can easily find the thumbnail image
+        $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
+    
+        // Overlay the Play icon to make it look like a video player
+        $(this).append($('<div/>', {'class': 'play'}));
+    
+        $(document).delegate('#'+this.id, 'click', function() {
+            // Create an iFrame with autoplay set to true
+            var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
+            if ($(this).data('params')) iframe_url+='&'+$(this).data('params');
+    
+            // The height and width of the iFrame should be the same as parent
+            var iframe = $('<iframe/>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
+    
+            // Replace the YouTube thumbnail with YouTube HTML5 Player
+            $(this).replaceWith(iframe);
+        });
+    });
  });
