@@ -9,7 +9,6 @@ categories:
 - Programing
 - Web Development
 meta: Learn how to keep your projects and tools in sync using Dropbox. From the Jason M Design blog.
-comments: true
 ---
 
 ![Sync Atom with Dropbox](/assets/images/posts/sync-atom.jpg)

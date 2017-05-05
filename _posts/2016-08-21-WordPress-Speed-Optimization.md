@@ -9,7 +9,6 @@ categories:
 - WordPress
 - Optimization
 meta: A fast website is important. Find out how to speed up your WordPress site, from start to finish. From the Jason M Design blog.
-comments: true
 ---
 
 ![WordPress Speed Optimization](/assets/images/posts/wordpress-speed-optimization.jpg)

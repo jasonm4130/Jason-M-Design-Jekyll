@@ -9,7 +9,6 @@ categories:
 - WordPress
 - Web Development
 meta: The right way to include a plugin you need for you WordPress theme. from the blog at Jason M Design.
-comments: true
 ---
 
 ![Advanced Custom Fields](/assets/images/posts/advanced-custom-fields.jpg)
