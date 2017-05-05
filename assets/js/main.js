@@ -1382,59 +1382,6 @@ $(".rotate").textrotator({
 });
 
 
-
-// (function(){
-// 	/* ---------------------------------------------- /*
-// 	 * Youtube video background
-// 	 /* ---------------------------------------------- */
-
-// 	$(function(){
-// 		$("#videoBackground").mb_YTPlayer();
-// 	});
-
-// 	$('#video-play').click(function(event) {
-// 		event.preventDefault();
-// 		if ($(this).hasClass('fa-play')) {
-// 			$('#videoBackground').playYTP();
-// 		} else {
-// 			$('#videoBackground').pauseYTP();
-// 		}
-// 		$(this).toggleClass('fa-play fa-pause');
-// 		return false;
-// 	});
-
-// 	$('#video-volume').click(function(event) {
-// 		event.preventDefault();
-// 		$('#videoBackground').YTPToggleVolume();
-// 		$(this).toggleClass('fa-volume-off fa-volume-up');
-// 		return false;
-// 	});
-// })();
-
-// //initialize gallery images
-// (function(){
-// 	Grid.init();
-// })();
-
-
-
-(function(){
-
-	/* checking if comments in page exists */
-	if($("#disqus_thread").length == 0) return;
-
-	/* discus */
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = '//jasonmdesign.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-})();
-
-
-
-
 /* Lightbox gallery */
 $(window).load(function () {
 	imagesLoaded('body', function () {
