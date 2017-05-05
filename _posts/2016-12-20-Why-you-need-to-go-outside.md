@@ -10,6 +10,7 @@ categories:
 - Web Development
 - Marketing
 meta: Why web professionals need to get outside and how they can find new clients as they do so. From Jason M Design.
+comments: true
 ---
 
 ![Get Outside](/assets/images/posts/go-outside.jpg)

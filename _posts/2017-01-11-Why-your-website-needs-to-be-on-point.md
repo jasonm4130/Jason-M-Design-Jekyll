@@ -9,6 +9,7 @@ categories:
 - blog
 - Marketing
 meta: Why your website matters and how you can ensure that it represents you and your company perfectly. From the Jason M Design blog.
+comments: true
 ---
 
 ![email marketing diagram](/assets/images/posts/your-website-on-point.jpg)

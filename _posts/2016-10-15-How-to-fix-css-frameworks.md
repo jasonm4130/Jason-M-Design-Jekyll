@@ -9,6 +9,7 @@ categories:
 - Programing
 - Web Development
 meta: Minimize the bloat associated with using CSS frameworks by adding one simple step to your workflow. By Jason M Design.
+comments: true
 ---
 
 ![Fixing CSS Frameworks](/assets/images/posts/css-frameworks.jpg)

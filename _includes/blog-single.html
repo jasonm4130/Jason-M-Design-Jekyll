@@ -1,1 +1,11 @@
-<section class="section blog blog-standard" id="blog-single"><div class="container"><div class="row"><div class="col-md-8 col-md-offset-2"><!-- Blog Post--><div class="row blog-post"><div class="col-md-12"><h2 class="post-title">{{page.title}}<div class="post-meta">by<a href="//medium.com/@Jason_Matthew">Jason</a><span>|</span>{{page.date | date: '%d %B, %Y'}}<span>|</span>{{page.categories | join: ' / '}}</div></h2><div class="post-content">{{page.content}}</div><div id="disqus_thread"></div><noscript>Please enable JavaScript to view the<a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript></div></div><!-- Blog Post end--></div></div></div></section>
+<section class="section blog blog-standard" id="blog-single"><div class="container"><div class="row"><div class="col-md-8 col-md-offset-2"><!-- Blog Post--><div class="row blog-post"><div class="col-md-12"><h2 class="post-title">{{page.title}}<div class="post-meta">by<a href="//medium.com/@Jason_Matthew">Jason</a><span>|</span>{{page.date | date: '%d %B, %Y'}}<span>|</span>{{page.categories | join: ' / '}}</div></h2><div class="post-content">{{page.content}}</div>{% if page.comments %}<div id="disqus_thread"></div><script>var disqus_config = function () {
+this.page.url = {{page.url}};  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = {{page.id}}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://jasonmdesign.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();</script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>{% endif %}</div></div><!-- Blog Post end--></div></div></div></section>

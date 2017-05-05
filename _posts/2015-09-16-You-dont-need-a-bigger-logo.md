@@ -9,6 +9,7 @@ categories:
 - Web Design
 - Content
 meta: Some basic design principals for every web designer, and why the client isn't always right. From the blog at Jason M Design
+comments: true
 ---
 
 ![Jason M Design Big Logo](/assets/images/posts/bigger-logo.jpg)

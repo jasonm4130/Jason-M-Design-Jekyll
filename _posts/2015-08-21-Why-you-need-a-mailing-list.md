@@ -9,6 +9,7 @@ categories:
 - blog
 - Marketing
 meta: The importance of building a mailing list, how to build a mailing list, and what to do with it once you have one. From the Jason M Design Blog
+comments: true
 ---
 
 ![email marketing diagram](/assets/images/posts/email-marketing-diagram.jpg)
