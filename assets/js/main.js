@@ -1976,7 +1976,3 @@ $(function() {
         });
     });
  });
-
- $(function(){
-	DISQUSWIDGETS.getCount({reset: true});
- });
