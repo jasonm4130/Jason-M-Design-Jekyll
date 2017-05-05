@@ -23,6 +23,7 @@
     "gulp-sass": "3.0.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-tinypng": "^1.0.2",
+    "gulp-uglify": "^2.1.2",
     "gulp-uncss": "^1.0.6",
     "gulp-util": "^3.0.7",
     "imagemin-jpegtran": "^5.0.2",
