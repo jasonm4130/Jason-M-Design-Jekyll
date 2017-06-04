@@ -27,7 +27,7 @@
     "gulp-uncss": "^1.0.6",
     "gulp-util": "^3.0.7",
     "imagemin-jpegtran": "^5.0.2",
-    "pug": "2.0.0-rc.1",
+    "pug": "2.0.0-rc.2",
     "run-sequence": "^1.2.2"
   },
   "repository": {
