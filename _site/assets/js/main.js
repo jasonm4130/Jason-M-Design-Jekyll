@@ -1930,7 +1930,7 @@ $("#playVideo").click(function(e){
  });
 
  $(function() {
-	 $(this).delay(1500).queue(function(){
+	 $(this).delay(5000).queue(function(){
 		$('.section.blog .section-content .blog-post .blog-content').matchHeight();
 	 	$('.section.blog .section-content .blog-post .blog-element img').matchHeight();
 		 console.log("Called Match Height")
