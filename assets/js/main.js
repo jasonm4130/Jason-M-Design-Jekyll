@@ -1418,22 +1418,6 @@ $(".rotate").textrotator({
 
 
 
-(function(){
-
-	/* checking if comments in page exists */
-	if($("#disqus_thread").length == 0) return;
-
-	/* discus */
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://jasonmdesign.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-})();
-
-
-
 
 /* Lightbox gallery */
 $(window).load(function () {
