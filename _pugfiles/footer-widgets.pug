@@ -23,13 +23,7 @@ section#footer-widgets.section.footer-widgets.dark-bg
       .col-md-3.col-sm-6
         .content-wrap.widget-recent-posts
           h4 Recent Posts
-          ul
-            | {% for post in site.posts limit: 3 %}
-            li
-              a.post-title(href='{{post.url}}') {{post.title}}
-              | by &nbsp
-              a.author(href='//medium.com/@Jason_Matthew') Jason
-            | {% endfor %}
+          ul#recent-posts-widget
       .col-md-3.col-sm-6
         .content-wrap.widget-gallery
           h4 Recent Projects
