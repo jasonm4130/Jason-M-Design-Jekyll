@@ -1929,14 +1929,6 @@ $("#playVideo").click(function(e){
      $('#testimonials-carousel .item').matchHeight();
  });
 
- $(function() {
-	 $(this).delay(5000).queue(function(){
-		$('.section.blog .section-content .blog-post .blog-content').matchHeight();
-	 	$('.section.blog .section-content .blog-post .blog-element img').matchHeight();
-		 console.log("Called Match Height")
-	 });
- });
-
 
 //  Youtube Embed
 $(function() {
@@ -1985,7 +1977,7 @@ $(function () {
 				var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
 				var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
 				var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
-				output += '<div class="blog-element"><img class="img-responsive" src="' + src + '"></div></header>';
+				output += '<div class="blog-element"><img class="img-responsive" src="' + src + '" width="360px" height="240px"></div></header>';
 				output += '<div class="blog-content"><h4><a href="'+ item.link + '">' + item.title + '</a></h4>';
 				output += '<div class="post-meta"><span>By ' + item.author + '</span></div>';
 				var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
