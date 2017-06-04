@@ -1956,6 +1956,7 @@ $(function() {
 //  Blog
 $(function () {
 	var $content = $('#jsonContent');
+	var $content2 = $('#recent-posts-widget');
 	var data = {
 		rss_url: 'https://medium.jasonmdesign.com/feed'
 	};
@@ -1991,26 +1992,14 @@ $(function () {
 				return k < 3;
 			});
 			$content.html(output);
-		}
-	});
-});
-
-// Recent Posts
-$(function () {
-	var $content = $('#recent-posts-widget');
-	var data = {
-		rss_url: 'https://medium.jasonmdesign.com/feed'
-	};
-	$.get('https://api.rss2json.com/v1/api.json', data, function (response) {
-		if (response.status == 'ok') {
-			var output = '';
+			var output2 = '';
 			$.each(response.items, function (k, item) {
-				output += '<li>';
-				output += '<a class="post-title" href="' + item.link + '">' + item.title + '</a>';
-				output += 'by ' + item.author + '</li>';
+				output2 += '<li>';
+				output2 += '<a class="post-title" href="' + item.link + '">' + item.title + '</a>';
+				output2 += 'by ' + item.author + '</li>';
 				return k < 3;
 			});
-			$content.html(output);
+			$content2.html(output2);
 		}
 	});
 });
