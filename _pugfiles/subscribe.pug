@@ -7,12 +7,14 @@ section#subscribe.section.subscribe
           h2 Subscribe
           span to our weekly newsletter
       .col-md-8.col-sm-6
-        form#subscription-form.subscribe-form
+        form#subscription-form.subscribe-form(action='//jasonmdesign.us11.list-manage.com/subscribe/post?u=131fa9d861b08aa7f41b67824&amp;id=ecd4d8c887', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
           .input-group
             label.sr-only(for='subscriber-email') Email address
-            input#subscriber-email.form-control(name='email', type='email', placeholder='Enter your email address', required='')
+            input#subscriber-email.form-control(name='EMAIL', type='email', placeholder='Enter your email address', required='')
+            div(style='position: absolute; left: -5000px;', aria-hidden='true')
+              input(type='text', name='b_131fa9d861b08aa7f41b67824_55eabaa2b8', tabindex='-1', value='')
             span.input-group-addon
-              input#subscribe-button.btn.btn-default(type='submit', value='Join')
+              input#subscribe-button.btn.btn-default(type='submit', value='Join', name='subscribe')
           // /input-grpup
         // SUCCESS OR ERROR MESSAGES
         #subscription-response

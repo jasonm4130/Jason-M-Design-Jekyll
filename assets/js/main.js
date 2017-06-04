@@ -1817,37 +1817,37 @@ if (ischrome) {
  ------------------------------------------*/
 
 
-$('#subscription-form').submit(function(e) {
+// $('#subscription-form').submit(function(e) {
 
-    e.preventDefault();
-    var $form           = $('#subscription-form');
-    var submit          = $('#subscribe-button');
-    var ajaxResponse    = $('#subscription-response');
-    var email           = $('#subscriber-email').val();
+//     e.preventDefault();
+//     var $form           = $('#subscription-form');
+//     var submit          = $('#subscribe-button');
+//     var ajaxResponse    = $('#subscription-response');
+//     var email           = $('#subscriber-email').val();
 
-    $.ajax({
-        type: 'POST',
-        url: 'php/subscribe.php',
-        dataType: 'json',
-        data: {
-            email: email
-        },
-        cache: false,
-        beforeSend: function(result) {
-            submit.val("Joining...");
-        },
-        success: function(result) {
-            if(result.sendstatus == 1) {
-                ajaxResponse.html(result.message);
-                $form.fadeOut(500);
-            } else {
-                ajaxResponse.html(result.message);
-                submit.val("Join");
-            }
-        }
-    });
+//     $.ajax({
+//         type: 'POST',
+//         url: 'php/subscribe.php',
+//         dataType: 'json',
+//         data: {
+//             email: email
+//         },
+//         cache: false,
+//         beforeSend: function(result) {
+//             submit.val("Joining...");
+//         },
+//         success: function(result) {
+//             if(result.sendstatus == 1) {
+//                 ajaxResponse.html(result.message);
+//                 $form.fadeOut(500);
+//             } else {
+//                 ajaxResponse.html(result.message);
+//                 submit.val("Join");
+//             }
+//         }
+//     });
 
-});
+// });
 
 /*------------------------------------------
  Testimonial carousel
