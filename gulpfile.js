@@ -91,7 +91,7 @@ gulp.task('pug', function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(['assets/lib/components-modernizr/modernizr.js', 'assets/lib/jquery/dist/jquery.js', 'assets/lib/bootstrap/dist/js/bootstrap.js', 'assets/lib/imagesloaded/imagesloaded.pkgd.min.js', 'assets/lib/isotope/dist/isotope.pkgd.min.js', 'assets/lib/owlcarousel/owl-carousel/owl.carousel.js', 'assets/lib/waypoints/lib/jquery.waypoints.min.js', 'assets/lib/waypoints/lib/shortcuts/inview.min.js',  'assets/lib/jquery-date-format/jquery-dateFormat.js', 'assets/lib/FlexSlider/jquery.flexslider.js', 'assets/lib/simple-text-rotator/jquery.simple-text-rotator.js', 'assets/lib/magnific-popup/dist/jquery.magnific-popup.js', 'assets/lib/match-height/jquery.matchHeight-min.js'])
+  return gulp.src(['assets/lib/components-modernizr/modernizr.js', 'assets/lib/jquery/dist/jquery.js', 'assets/lib/bootstrap/dist/js/bootstrap.js', 'assets/lib/imagesloaded/imagesloaded.pkgd.min.js', 'assets/lib/isotope/dist/isotope.pkgd.min.js', 'assets/lib/owlcarousel/owl-carousel/owl.carousel.js', 'assets/lib/waypoints/lib/jquery.waypoints.min.js', 'assets/lib/waypoints/lib/shortcuts/inview.min.js',  'assets/lib/jquery-date-format/jquery-dateFormat.js', 'assets/lib/FlexSlider/jquery.flexslider.js', 'assets/lib/simple-text-rotator/jquery.simple-text-rotator.js', 'assets/lib/magnific-popup/dist/jquery.magnific-popup.js', 'assets/lib/match-height/jquery.matchHeight-min.js', 'assets/lib/jqBootstrapValidation/jqBootstrapValidation.js'])
   .pipe(sourcemaps.init())
     .pipe(concat('scripts.js'))
     .pipe(sourcemaps.write())
