@@ -3,7 +3,7 @@ layout: blog-single
 title:  "You Don’t Need a Bigger Logo"
 date:   2015-09-16
 author: Jason
-thumbnail: /assets/images/posts/bigger-logo
+thumbnail: /assets/img/posts/bigger-logo
 excerpt: Why web designers are asked every day to make the logo bigger, and why you should say no.
 categories:
 - Web Design
@@ -11,7 +11,7 @@ categories:
 meta: Some basic design principals for every web designer, and why the client isn't always right. From the blog at Jason M Design
 ---
 
-![Jason M Design Big Logo](/assets/images/posts/bigger-logo.jpg)
+![Jason M Design Big Logo](/assets/img/posts/bigger-logo.jpg)
 
 Every web designer immediately knows what I am talking about when they read the title of this article, because inevitably at some point in their career they have been asked this same question, “Can you make the logo bigger?”.
 

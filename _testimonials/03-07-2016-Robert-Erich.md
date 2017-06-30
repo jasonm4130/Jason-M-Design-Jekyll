@@ -1,7 +1,7 @@
 ---
 title:  "Rober Erich"
 date:   2016-07-03
-thumbnail: /assets/images/testimonials/rob-profile
+thumbnail: /assets/img/testimonials/rob-profile
 designation: "Founder of Money Nomad"
 ---
 

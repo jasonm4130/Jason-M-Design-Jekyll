@@ -3,7 +3,7 @@ layout: blog-single
 title:  "What your website is missing… You!"
 date:   2016-06-18
 author: Jason
-thumbnail: /assets/images/posts/you-are-missing
+thumbnail: /assets/img/posts/you-are-missing
 excerpt: In this digital age, now more than ever the most important thing you can do is have a personal relationship with customers.
 categories:
 - Web Design
@@ -12,7 +12,7 @@ categories:
 meta: Technology in increasing the amount of interactions we have every day. Sometimes people just want to have a personal interaction though. From the Jason M Design blog.
 ---
 
-![You are missing](/assets/images/posts/you-are-missing.jpg)
+![You are missing](/assets/img/posts/you-are-missing.jpg)
 
 This post is one from my old blog before I redesigned my website, it however is one of my favorite posts because it was when I really discovered who I was writing to.
 

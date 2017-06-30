@@ -3,7 +3,7 @@ layout: blog-single
 title:  "Include PLugins in WordPress Theme"
 date:   2016-09-12
 author: Jason
-thumbnail: /assets/images/posts/advanced-custom-fields
+thumbnail: /assets/img/posts/advanced-custom-fields
 excerpt: A great way to use a plugin to enhance your WordPress development potential and speed.
 categories:
 - WordPress
@@ -11,7 +11,7 @@ categories:
 meta: The right way to include a plugin you need for you WordPress theme. from the blog at Jason M Design.
 ---
 
-![Advanced Custom Fields](/assets/images/posts/advanced-custom-fields.jpg)
+![Advanced Custom Fields](/assets/img/posts/advanced-custom-fields.jpg)
 
 Today I was talking with a friend in a Slack community that I am a part of. He is working on building his first custom WordPress website. I was talking with him about how he was doing it, and how I have built websites in the past. The topic turned to the plugins he was using. As it would be the tools he was using were similar to those I had used to build sites.
 
@@ -25,7 +25,7 @@ So let’s get started. First off you are going to need to get the plugin downlo
 
 With this downloaded, we need to extract the contents of the zip file and place it somewhere within the theme folder. For me, I chose /inc/plugins I also renamed the advanced custom fields folder to just ACF to make it easier to reference later.
 
-![Advanced Custom Fields Folder](/assets/images/posts/acf-folder.jpg)
+![Advanced Custom Fields Folder](/assets/img/posts/acf-folder.jpg)
 
 With the contents of the plugin installed we need to include the main php file of the plugin in the functions.php of our theme.
 

@@ -3,7 +3,7 @@ layout: blog-single
 title:  "What's wrong with CSS Frameworks, and how to fix them"
 date:   2016-10-15
 author: Jason
-thumbnail: /assets/images/posts/css-frameworks
+thumbnail: /assets/img/posts/css-frameworks
 excerpt: CSS Frameworks add bloat to your sites. Find out how to minimize this but still use these great tools.
 categories:
 - Programing
@@ -11,7 +11,7 @@ categories:
 meta: Minimize the bloat associated with using CSS frameworks by adding one simple step to your workflow. By Jason M Design.
 ---
 
-![Fixing CSS Frameworks](/assets/images/posts/css-frameworks.jpg)
+![Fixing CSS Frameworks](/assets/img/posts/css-frameworks.jpg)
 
 Many designers and developers use frameworks like bootstrap or foundation. They are great at speeding up the development process and allowing developers to write code that is easier for others to work on and maintain.
 

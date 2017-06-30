@@ -5,13 +5,13 @@ date:   2016-07-20
 categories:
 - web-design
 - wordpress
-thumbnail: assets/images/portfolio/home/compass-psychology
+thumbnail: assets/img/portfolio/home/compass-psychology
 lead: A brand new website to represent Compass Psychology online.
 company: "Compass Psychology"
 website: "compasspsychology.com"
 images:
-- assets/images/portfolio/compass-psychology.jpg
-- assets/images/portfolio/compass-psychology-resources.jpg
+- assets/img/portfolio/compass-psychology.jpg
+- assets/img/portfolio/compass-psychology-resources.jpg
 ---
 
 Working closely with Compass Psychology to help create an amazing website to represent this newly formed business was a blast! We worked closely together to ensure that the website would be appealing to new clients and allow Compass Psychology to present their professionalism, along with their years of experience and great attitude.

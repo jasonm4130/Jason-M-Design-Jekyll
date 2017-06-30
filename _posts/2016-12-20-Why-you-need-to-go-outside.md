@@ -3,7 +3,7 @@ layout: blog-single
 title:  "Why Web Professionals need to go outside."
 date:   2016-12-20
 author: Jason
-thumbnail: /assets/images/posts/go-outside
+thumbnail: /assets/img/posts/go-outside
 excerpt: Web Professionals are always looking for new clients, this post explains why.
 categories:
 - Web Design
@@ -12,7 +12,7 @@ categories:
 meta: Why web professionals need to get outside and how they can find new clients as they do so. From Jason M Design.
 ---
 
-![Get Outside](/assets/images/posts/go-outside.jpg)
+![Get Outside](/assets/img/posts/go-outside.jpg)
 
 Lately I have been thinking about marketing my own web design and development agency, I've looked at all of the online avenues. While researching these it made me realise something very important. They have almost no barrier to entry for web professionals. This low barrier to entry for particular markets is exactly why you need to go outside.
 

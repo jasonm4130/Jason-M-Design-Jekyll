@@ -5,12 +5,12 @@ date:   2016-11-20
 categories:
 - web-design
 - wordpress
-thumbnail: assets/images/portfolio/home/masonboro-partners
+thumbnail: assets/img/portfolio/home/masonboro-partners
 lead: A re-design of their existing website.
 company: "Masonboro Partners"
 website: "masonboropartners.com"
 images:
-- assets/images/portfolio/masonboro-partners.jpg
+- assets/img/portfolio/masonboro-partners.jpg
 ---
 
 Masonboro Partners had an existing site with some major security concerns and display problems. Initially we helped them to resolve these security concerns and restore their site to the way it originally was.

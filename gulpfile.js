@@ -111,8 +111,8 @@ gulp.task('watch', function() {
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*', '_posts/*.md', '_portfolio/**/*.md', '_testimonials/**/*.md', 'portfolio/*.html', 'about-us/*.html', 'our-services/*.html', 'blog/*.html'], ['jekyll-rebuild', 'uncss']);
     gulp.watch('assets/js/**/*.js', ['jekyll-rebuild']);
     gulp.watch('assets/lib/**/*.js', ['scripts', 'jekyll-rebuild']);
-    gulp.watch(['assets/images/src/**/*.+(jpg|jpeg)'], ['image-op-jpeg']);
-    gulp.watch(['assets/images/src/**/*.png'], ['image-op-png']);
+    gulp.watch(['assets/img/src/**/*.+(jpg|jpeg)'], ['image-op-jpeg']);
+    gulp.watch(['assets/img/src/**/*.png'], ['image-op-png']);
 });
 
 /**

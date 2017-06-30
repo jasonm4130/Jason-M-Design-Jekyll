@@ -3,7 +3,7 @@ layout: blog-single
 title:  "Sync Atom with Dropbox"
 date:   2016-09-18
 author: Jason
-thumbnail: /assets/images/posts/sync-atom
+thumbnail: /assets/img/posts/sync-atom
 excerpt: Syncing your code editor settings so everything is just how you like it no matter the computer.
 categories:
 - Programing
@@ -11,7 +11,7 @@ categories:
 meta: Learn how to keep your projects and tools in sync using Dropbox. From the Jason M Design blog.
 ---
 
-![Sync Atom with Dropbox](/assets/images/posts/sync-atom.jpg)
+![Sync Atom with Dropbox](/assets/img/posts/sync-atom.jpg)
 
 This is a quick tutorial on how to sync the Atom code editor setup between PC’s running windows. Using dropbox or any other cloud storage service.
 
@@ -60,7 +60,7 @@ The first thing we need to do is delete the old .atom folder. For me because the
 
 After deleting the old .atom folders in your user directories, fire up Symlink Creator.
 
-![Symlink Settings](/assets/images/posts/sync-settings.jpg)
+![Symlink Settings](/assets/img/posts/sync-settings.jpg)
 
 In the link folder section, you are going to need to put the file path that we took the original .atom folder from. For me, this was C:\Users\Jason. You will also need to name the link .atom
 

@@ -3,7 +3,7 @@ layout: blog-single
 title:  "WordPress Speed Optimization"
 date:   2016-08-21
 author: Jason
-thumbnail: /assets/images/posts/wordpress-speed-optimization
+thumbnail: /assets/img/posts/wordpress-speed-optimization
 excerpt: WordPress speed optimization is crucial to you and your websites success, however it is often overlooked.
 categories:
 - WordPress
@@ -11,7 +11,7 @@ categories:
 meta: A fast website is important. Find out how to speed up your WordPress site, from start to finish. From the Jason M Design blog.
 ---
 
-![WordPress Speed Optimization](/assets/images/posts/wordpress-speed-optimization.jpg)
+![WordPress Speed Optimization](/assets/img/posts/wordpress-speed-optimization.jpg)
 
 WordPress speed optimization is crucial to you and your websites success, however it is often overlooked. When a website loads slowly the sites visitors become impatient and this leads to an overall bad impression and experience. Today however I want to share a few things that I have found to improve page load times and overall speed.
 

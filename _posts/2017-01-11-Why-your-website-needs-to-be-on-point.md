@@ -3,7 +3,7 @@ layout: blog-single
 title:  "Why your website needs to be on point."
 date:   2017-01-11
 author: Jason
-thumbnail: /assets/images/posts/your-website-on-point
+thumbnail: /assets/img/posts/your-website-on-point
 excerpt: Your website is your home base, the place for you to build your amazing companies presence online. Find out why.
 categories:
 - blog
@@ -11,7 +11,7 @@ categories:
 meta: Why your website matters and how you can ensure that it represents you and your company perfectly. From the Jason M Design blog.
 ---
 
-![email marketing diagram](/assets/images/posts/your-website-on-point.jpg)
+![email marketing diagram](/assets/img/posts/your-website-on-point.jpg)
 
 # Why your website needs to be on point
 
