@@ -10,13 +10,13 @@ section#contact.section.contact
       .row
         .col-md-6.col-sm-5
           h5 Feel free to drop us a line!
-          form#contactForm.contact-form(action='php/contact-form.php', method='post', name='contactform', role='form')
+          form#contactForm.contact-form(name='contactform', role='form')
             .form-group
               input#name.form-control(name='name', placeholder='Your Name', type='text', required='')
             .form-group
               input#email.form-control(name='email', placeholder='Email Address', type='email', required='')
             .form-group
-              textarea#message.form-control(name='massage', placeholder='Type your message here', rows='5', required='')
+              textarea#message.form-control(name='message', placeholder='Type your message here', rows='5', required='')
             #contactFormResponse
             button#cfsubmit.btn.btn-dark.btn-block.contact-submit(type='submit') Give us a shout
         .col-md-6.col-sm-7
