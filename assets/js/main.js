@@ -2028,7 +2028,7 @@ $(function () {
 				var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; // Find where the src attribute starts
 				var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
 				var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
-				var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
+				var src = item.description.substring(srcStart, srcEnd).replace("/1024/", "/360/"); // Extract just the URL
 				output += '<div class="blog-element"><img src="' + src + '" width="360px" height="240px"></div></header>';
 				output += '<div class="blog-content"><h4><a href="'+ item.link + '">' + item.title + '</a></h4>';
 				output += '<div class="post-meta"><span>By ' + item.author + '</span></div>';
