@@ -12,7 +12,10 @@ var runSequence = require('run-sequence');
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
-var cloudflare = require("gulp-cloudflare");
+var cloudflare = require('gulp-cloudflare');
+var cleanCSS = require('gulp-clean-css');
+var critical = require('critical').stream;
+var order = require("gulp-order");
 
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -75,11 +78,24 @@ gulp.task('sass', function() {
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
             cascade: true
         }))
+        .pipe(cleanCSS())
         .pipe(gulp.dest('_site/assets/css'))
         .pipe(browserSync.reload({
             stream: true
         }))
         .pipe(gulp.dest('assets/css'));
+});
+
+/**
+ * Generate & Inline Critical-path CSS
+ */
+gulp.task('critical', function () {
+    return gulp.src(['_site/*.html'])
+        .pipe(critical({inline: false, base: '_site/', css: ['_site/assets/css/main.css']}))
+        .pipe(cleanCSS())
+        .pipe(rename('critical.min.css'))
+        .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
+        .pipe(gulp.dest('_includes/'));
 });
 
 /**

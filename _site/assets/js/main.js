@@ -1310,27 +1310,6 @@ $(document).ready(function(){
 
 });
 
-
-/*------------------------------------------
- 11. Preloader
- ------------------------------------------*/
-
-$(window).load(function () {
-	imagesLoaded('body', function () {
-		$(".page-loader div").fadeOut();
-		$(".page-loader").delay(200).fadeOut("slow");
-	});
-});
-
-
-
-
-
-
-
-
-
-
 var navbar      = $('.main-navigation'),
 	width       = Math.max($(window).width(), window.innerWidth),
 	mobileTest;
