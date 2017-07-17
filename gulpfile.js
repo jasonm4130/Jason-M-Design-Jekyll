@@ -23,7 +23,7 @@ var messages = {
 };
 
 /**
- * Better Error Handeling
+ * Better Error Handling
  */
 var gulp_src = gulp.src;
 gulp.src = function() {
