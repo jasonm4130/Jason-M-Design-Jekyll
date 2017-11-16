@@ -118,8 +118,6 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('assets/js/dist/'))
 });
 
-// New Domain
-
 // Purge Cloudflare Cache
 gulp.task('purge-cdn-cache', function() {
     var options = {
