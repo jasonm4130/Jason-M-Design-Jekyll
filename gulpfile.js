@@ -123,7 +123,7 @@ gulp.task('purge-cdn-cache', function() {
     var options = {
         token  : '24c1ddc7d8f07c6bf57e5acac3a3f72071a53',
         email  : 'jasonm4130@gmail.com',
-        domain : 'e218521d6f2ae2b2cc912d23167d8bd4'
+        domain : 'jasonmdesign.com'
     };
  
     cloudflare(options);
