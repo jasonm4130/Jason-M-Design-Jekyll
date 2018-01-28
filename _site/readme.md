@@ -9,3 +9,5 @@ This project has been heavily influenced by DevTips / Travis Neilson.
 We understand that a website is a means to an end and that it is the goal of the website that matters not just the website.
 
 This is a test to check out how Visual Studio Code works
+
+To develop locally run bundle exec gulp.
