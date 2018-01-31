@@ -17,6 +17,10 @@
         },
         submitSuccess: function($form, event) {
 			event.preventDefault();
+			var $form = $('#contactForm');
+			$.post($form.attr("action"), $form.serialize()).then(function() {
+				alert("Thank you!");
+			});
             // Success message
 			$('#contactFormResponse').html("<div class='alert alert-success'>");
 			$('#contactFormResponse > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
