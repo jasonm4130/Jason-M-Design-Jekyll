@@ -26,10 +26,6 @@
 			$('#contactFormResponse > .alert-success')
 				.append('</div>');
 
-			var $form = $('#contactForm');
-				$.post($form.attr("action"), $form.serialize()).then(function() {
-			});
-
 			//clear all fields
 			$('#contactForm').trigger("reset");
         },
