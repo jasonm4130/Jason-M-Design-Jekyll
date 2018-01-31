@@ -41,7 +41,7 @@ gulp.src = function() {
  */
 gulp.task('jekyll-build', function(done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('bundle.bat', ['exec', 'jekyll build'], {
+    return cp.spawn(jekyll, ['build'], {
         stdio: 'inherit'
     }).on('close', done);
 });
