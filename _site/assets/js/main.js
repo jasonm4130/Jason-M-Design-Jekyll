@@ -2,13 +2,10 @@
  Contact form
  ------------------------------------------*/
 
- $("#contactForm").submit(function(e) {
-	e.preventDefault();
+ $(function() {
 
-	$("input,textarea").jqBootstrapValidation({
-        preventSubmit: true,
+	$("#contactForm input,select,textarea").not("[type=submit]").jqBootstrapValidation({
         submitError: function($form, event, errors) {
-			// additional error messages or events
 			// Fail message
 			$('#contactFormResponse').html("<div class='alert alert-danger'>");
 			$('#contactFormResponse > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -19,8 +16,7 @@
 			$('#contactForm').trigger("reset");
         },
         submitSuccess: function($form, event) {
-            event.preventDefault(); // prevent default submit behaviour
-            // get values from FORM
+			e.preventDefault();
             // Success message
 			$('#contactFormResponse').html("<div class='alert alert-success'>");
 			$('#contactFormResponse > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -30,6 +26,10 @@
 			$('#contactFormResponse > .alert-success')
 				.append('</div>');
 
+			var $form = $('#contactForm');
+				$.post($form.attr("action"), $form.serialize()).then(function() {
+			});
+
 			//clear all fields
 			$('#contactForm').trigger("reset");
         },
@@ -38,15 +38,8 @@
 		},
 	});
 
-	$("a[data-toggle=\"tab\"]").click(function(e) {
-        e.preventDefault();
-        $(this).tab("show");
-    });
-  
-	var $form = $(this);
-	$.post($form.attr("action"), $form.serialize()).then(function() {
-	  alert("Thank you!");
-	});
+	.on('success.form')
+
   });
 
 $('#name').focus(function() {
