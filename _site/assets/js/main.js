@@ -16,7 +16,7 @@
 			$('#contactForm').trigger("reset");
         },
         submitSuccess: function($form, event) {
-			e.preventDefault();
+			event.preventDefault();
             // Success message
 			$('#contactFormResponse').html("<div class='alert alert-success'>");
 			$('#contactFormResponse > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -33,8 +33,6 @@
             return $(this).is(":visible");
 		},
 	});
-
-	.on('success.form')
 
   });
 

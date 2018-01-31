@@ -16,7 +16,11 @@
 			$('#contactForm').trigger("reset");
         },
         submitSuccess: function($form, event) {
-			e.preventDefault();
+			event.preventDefault();
+			var $form = $('#contactForm');
+			$.post($form.attr("action"), $form.serialize()).then(function() {
+				alert("Thank you!");
+			});
             // Success message
 			$('#contactFormResponse').html("<div class='alert alert-success'>");
 			$('#contactFormResponse > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
