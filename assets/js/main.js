@@ -2,10 +2,11 @@
  Contact form
  ------------------------------------------*/
 
-$(function () {
+ $("#contactForm").submit(function(e) {
+	e.preventDefault();
 
 	$("input,textarea").jqBootstrapValidation({
-        preventSubmit: false,
+        preventSubmit: true,
         submitError: function($form, event, errors) {
 			// additional error messages or events
 			// Fail message
@@ -34,14 +35,19 @@ $(function () {
         },
         filter: function() {
             return $(this).is(":visible");
-        },
-    });
+		},
+	});
 
-    $("a[data-toggle=\"tab\"]").click(function(e) {
+	$("a[data-toggle=\"tab\"]").click(function(e) {
         e.preventDefault();
         $(this).tab("show");
     });
-});
+  
+	var $form = $(this);
+	$.post($form.attr("action"), $form.serialize()).then(function() {
+	  alert("Thank you!");
+	});
+  });
 
 $('#name').focus(function() {
     $('#contactFormResponse').html('');
