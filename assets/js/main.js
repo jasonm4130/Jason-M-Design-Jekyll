@@ -34,8 +34,6 @@
 		},
 	});
 
-	.on('success.form')
-
   });
 
 $('#name').focus(function() {
