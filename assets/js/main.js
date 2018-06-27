@@ -1982,7 +1982,8 @@ $(function () {
 	var $content = $('#jsonContent');
 	var $content2 = $('#recent-posts-widget');
 	var data = {
-		rss_url: 'https://medium.jasonmdesign.com/feed'
+		rss_url: 'https://medium.jasonmdesign.com/feed',
+		api_key: 'y2n9n0z8le9dsw4ihxylvpchwkrdl4pz4uns62rb',
 	};
 	$.get('https://api.rss2json.com/v1/api.json', data, function (response) {
 		if (response.status == 'ok') {
