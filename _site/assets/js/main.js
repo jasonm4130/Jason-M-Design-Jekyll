@@ -19,7 +19,6 @@
 			event.preventDefault();
 			var $form = $('#contactForm');
 			$.post($form.attr("action"), $form.serialize()).then(function() {
-				alert("Thank you!");
 			});
             // Success message
 			$('#contactFormResponse').html("<div class='alert alert-success'>");
