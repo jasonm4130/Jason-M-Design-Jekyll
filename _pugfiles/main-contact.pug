@@ -10,11 +10,11 @@ section#contact.section.contact
       .row
         .col-md-6.col-sm-5
           h5 Feel free to drop us a line!
-          form#contactForm.contact-form(name='contactform', role='form')
+          form#contactForm.contact-form(name='contactform', role='form', method="POST", action="https://formspree.io/jason@jasonmdesign.com")
             .form-group
               input#name.form-control(name='name', placeholder='Your Name', type='text', required='')
             .form-group
-              input#email.form-control(name='email', placeholder='Email Address', type='email', required='')
+              input#email.form-control(name='_replyto', placeholder='Email Address', type='email', required='')
             .form-group
               textarea#message.form-control(name='message', placeholder='Type your message here', rows='5', required='')
             #contactFormResponse

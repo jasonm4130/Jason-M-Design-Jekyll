@@ -4,38 +4,38 @@
 
  $(function() {
 
-	$("#contactForm input,select,textarea").not("[type=submit]").jqBootstrapValidation({
-        submitError: function($form, event, errors) {
-			// Fail message
-			$('#contactFormResponse').html("<div class='alert alert-danger'>");
-			$('#contactFormResponse > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-				.append("</button>");
-			$('#contactFormResponse > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
-			$('#contactFormResponse > .alert-danger').append('</div>');
-			//clear all fields
-			$('#contactForm').trigger("reset");
-        },
-        submitSuccess: function($form, event) {
-			event.preventDefault();
-			var $form = $('#contactForm');
-			$.post($form.attr("action"), $form.serialize()).then(function() {
-			});
-            // Success message
-			$('#contactFormResponse').html("<div class='alert alert-success'>");
-			$('#contactFormResponse > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-				.append("</button>");
-			$('#contactFormResponse > .alert-success')
-				.append("<strong>Your message has been sent. </strong>");
-			$('#contactFormResponse > .alert-success')
-				.append('</div>');
+	// $("#contactForm input,select,textarea").not("[type=submit]").jqBootstrapValidation({
+    //     submitError: function($form, event, errors) {
+	// 		// Fail message
+	// 		$('#contactFormResponse').html("<div class='alert alert-danger'>");
+	// 		$('#contactFormResponse > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+	// 			.append("</button>");
+	// 		$('#contactFormResponse > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+	// 		$('#contactFormResponse > .alert-danger').append('</div>');
+	// 		//clear all fields
+	// 		$('#contactForm').trigger("reset");
+    //     },
+    //     submitSuccess: function($form, event) {
+	// 		event.preventDefault();
+	// 		var $form = $('#contactForm');
+	// 		$.post($form.attr("action"), $form.serialize()).then(function() {
+	// 		});
+    //         // Success message
+	// 		$('#contactFormResponse').html("<div class='alert alert-success'>");
+	// 		$('#contactFormResponse > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+	// 			.append("</button>");
+	// 		$('#contactFormResponse > .alert-success')
+	// 			.append("<strong>Your message has been sent. </strong>");
+	// 		$('#contactFormResponse > .alert-success')
+	// 			.append('</div>');
 
-			//clear all fields
-			$('#contactForm').trigger("reset");
-        },
-        filter: function() {
-            return $(this).is(":visible");
-		},
-	});
+	// 		//clear all fields
+	// 		$('#contactForm').trigger("reset");
+    //     },
+    //     filter: function() {
+    //         return $(this).is(":visible");
+	// 	},
+	// });
 
   });
 
