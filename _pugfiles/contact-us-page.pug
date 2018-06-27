@@ -6,11 +6,11 @@ section#contact.section.contact.contact-full-width
       .row
         .col-md-6.col-sm-8.col-md-offset-3.col-sm-offset-2
           h5 Feel free to drop us a line!
-          <form id="contactForm" class="contact-form" name="contactform"  netlify>
+          <form id="contactForm" class="contact-form" name="contactform"  method="POST" action="https://formspree.io/jason@jasonmdesign.com">
             .form-group
               input#name.form-control(name='name', placeholder='Your Name', type='text', required='')
             .form-group
-              input#email.form-control(name='email', placeholder='Email Address', type='email', required='')
+              input#email.form-control(name='_replyto', placeholder='Email Address', type='email', required='')
             .form-group
               textarea#message.form-control(name='massage', placeholder='Type your message here', rows='5', required='')
             #contactFormResponse
